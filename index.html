@@ -151,33 +151,86 @@
         .hero-gradient {
             background: linear-gradient(135deg, rgba(63, 0, 117, 0.8) 0%, rgba(17, 14, 61, 0.6) 100%);
         }
+
+        /* Dropdown Menu Styles */
+        .dropdown-menu {
+            position: relative;
+            display: inline-block;
+        }
+
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: white;
+            min-width: 220px;
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+            padding: 12px 0;
+            z-index: 1;
+            border-radius: 6px;
+            top: 100%;
+            left: 0;
+            border-top: 3px solid #5a189a;
+        }
+
+        .dropdown-menu:hover .dropdown-content {
+            display: block;
+        }
+
+        .dropdown-content a {
+            color: #3f0075;
+            padding: 12px 20px;
+            text-decoration: none;
+            display: block;
+            font-size: 14px;
+            font-weight: 500;
+            transition: all 0.3s ease;
+        }
+
+        .dropdown-content a:hover {
+            background-color: #f3e8ff;
+            padding-left: 24px;
+            color: #5a189a;
+        }
+
+        .dropdown-content a:first-child {
+            border-radius: 6px 6px 0 0;
+        }
+
+        .dropdown-content a:last-child {
+            border-radius: 0 0 6px 6px;
+        }
+
+        .ticker-wrap {
+            position: relative;
+            z-index: 998;
+        }
     </style>
 </head>
 
 <body
     class="bg-background text-on-surface font-body-md selection:bg-primary-container selection:text-on-primary-container">
     <!-- Top Bar -->
-    <div class="bg-[#4c077b] text-white">
-        <div class="max-w-container-max mx-auto px-margin-desktop flex flex-col md:flex-row items-center justify-between gap-3 py-3 text-sm font-medium">
-            <div class="flex flex-col sm:flex-row items-center gap-4">
+    <div class="bg-[#4c077b] text-white" style="background-color: #4c077b; padding: 12px 0;">
+        <div class="max-w-container-max mx-auto px-margin-desktop flex flex-col md:flex-row items-center justify-between gap-3 py-4 text-sm font-medium">
+            <div class="flex flex-col sm:flex-row items-center gap-6">
                 <a class="flex items-center gap-2 hover:text-[#ffd700] transition-colors" href="tel:9786731488">
-                    <i class="fa-solid fa-phone"></i>
-                    9786731488
+                    <i class="fa-solid fa-phone" style="font-size: 16px;"></i>
+                    <span style="font-size: 14px;">9786731488</span>
                 </a>
                 <a class="flex items-center gap-2 hover:text-[#ffd700] transition-colors" href="mailto:charlesygy@gmail.com">
-                    <i class="fa-regular fa-envelope"></i>
-                    charlesygy@gmail.com
+                    <i class="fa-regular fa-envelope" style="font-size: 16px;"></i>
+                    <span style="font-size: 14px;">charlesygy@gmail.com</span>
                 </a>
             </div>
-            <div class="flex items-center gap-3">
-                <a class="hover:text-[#ffd700] transition-colors" href="#" aria-label="Facebook">
-                    <i class="fa-brands fa-facebook-f"></i>
+            <div class="flex items-center gap-4">
+                <a class="hover:text-[#ffff] transition-colors" href="#" aria-label="Facebook">
+                    <i class="fa-brands fa-facebook-f" style="font-size: 16px;"></i>
                 </a>
                 <a class="hover:text-[#ffd700] transition-colors" href="#" aria-label="Twitter">
-                    <i class="fa-brands fa-twitter"></i>
+                    <i class="fa-brands fa-twitter" style="font-size: 16px;"></i>
                 </a>
                 <a class="hover:text-[#ffd700] transition-colors" href="#" aria-label="LinkedIn">
-                    <i class="fa-brands fa-linkedin-in"></i>
+                    <i class="fa-brands fa-linkedin-in" style="font-size: 16px;"></i>
                 </a>
             </div>
         </div>
@@ -186,20 +239,13 @@
     <header class="w-full bg-[#5a189a] text-white shadow-md">
         <!-- Middle Bar: Brand Identity -->
         <div class="max-w-container-max mx-auto px-margin-desktop py-6">
-            <div class="flex flex-col lg:flex-row items-center justify-between gap-4">
+            <div class="flex flex-col lg:flex-row items-center justify-center gap-4">
                 <div class="flex items-center gap-4">
                     <img alt="St. Charles Logo" class="h-24 w-auto" src="assets/logo.png" />
-                    <div>
-                        <p class="font-bold uppercase tracking-[0.25em] text-[14px] text-[#ffd700]">St. Charles Matric. Hr. Sec. School</p>
+                    <div class="text-center ">
                         <h1 class="font-extrabold text-[28px] md:text-[34px] tracking-[0.12em] uppercase leading-tight">St. Charles Matric. Hr. Sec. School</h1>
                         <p class="font-semibold uppercase tracking-[0.3em] text-[#ffd700] text-[14px]">Yelagiri Hills</p>
                     </div>
-                </div>
-                <div class="hidden lg:flex items-center gap-6 text-sm text-white/90">
-                    <span class="flex items-center gap-2">
-                        <i class="fa-solid fa-school"></i>
-                        A Premier School in Yelagiri Hills
-                    </span>
                 </div>
             </div>
         </div>
@@ -212,7 +258,16 @@
                 </button>
                 <div class="hidden md:flex flex-wrap items-center gap-6 font-semibold text-sm">
                     <a class="text-[#3f0075] border-b-2 border-[#3f0075] pb-1 transition-all" href="#">Home</a>
-                    <a class="text-[#3f0075] hover:text-[#5a189a] transition-colors" href="#">About Us <i class="fa-solid fa-angle-down text-xs"></i></a>
+                    <div class="dropdown-menu">
+                        <a class="text-[#3f0075] hover:text-[#5a189a] transition-colors cursor-pointer pb-1" href="#">About Us <i class="fa-solid fa-angle-down text-xs"></i></a>
+                        <div class="dropdown-content">
+                            <a href="#">School History</a>
+                            <a href="#">Mission & Vision</a>
+                            <a href="#">Principal's Message</a>
+                            <a href="#">Infrastructure</a>
+                            <a href="#">Achievements</a>
+                        </div>
+                    </div>
                     <a class="text-[#3f0075] hover:text-[#5a189a] transition-colors" href="#">Management <i class="fa-solid fa-angle-down text-xs"></i></a>
                     <a class="text-[#3f0075] hover:text-[#5a189a] transition-colors" href="#">Academics <i class="fa-solid fa-angle-down text-xs"></i></a>
                     <a class="text-[#3f0075] hover:text-[#5a189a] transition-colors" href="#">Staff</a>
@@ -299,11 +354,11 @@
         <div class="max-w-container-max mx-auto px-margin-desktop grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
             <div class="space-y-8">
                 <div>
-                    <h3 class="text-primary font-headline-lg text-headline-lg mb-2">Our Legacy of Excellence</h3>
+                    <h3 class="text-primary font-headline-lg text-headline-lg mb-2">About Us</h3>
                     <div class="h-1.5 w-24 bg-secondary rounded-full"></div>
                 </div>
                 <p class="text-on-surface-variant text-body-lg leading-relaxed">
-                  ST.CHARLES MATRIC SCHOOL, ATHANAVUR was established in 1975 and it is managed by the Pvt. Unaided. It is located in Rural area. It is located in JOLARPET block of VELLORE district of Tamil Nadu. The school consists of Grades from 1 to 11. The school is Co-educational and it have an attached pre-primary section. The school is Non-Ashram type (Govt.) in nature and is not using school building as a shift-school. English is the medium of instructions in this school. This school is approachable by all weather road. In this school academic session starts in April.
+                 ST.CHARLES MATRIC SCHOOL, ATHANAVUR was established in 1975 and it is managed by the Pvt. Unaided. It is located in Rural area. It is located in JOLARPET block of VELLORE district of Tamil Nadu. The school consists of Grades from 1 to 11. The school is Co-educational and it have an attached pre-primary section. The school is Non-Ashram type (Govt.) in nature and is not using school building as a shift-school. English is the medium of instructions in this school. This school is approachable by all weather road. In this school academic session starts in April.
                 </p>
                 <div class="grid grid-cols-2 gap-6">
                     <div class="p-6 rounded-2xl bg-white shadow-sm border border-primary/5">
@@ -319,7 +374,7 @@
                 </div>
                 <button
                     class="flex items-center gap-3 px-8 py-4 bg-midnight text-white rounded-xl font-bold hover:bg-primary transition-all">
-                    Read Full Story <span class="material-symbols-outlined">arrow_right_alt</span>
+                    Read More <span class="material-symbols-outlined">arrow_right_alt</span>
                 </button>
             </div>
             <div class="relative">
@@ -327,7 +382,7 @@
                 <div class="absolute -bottom-10 -left-10 w-48 h-48 bg-primary/10 rounded-full blur-3xl"></div>
                 <img alt="About School" class="w-full h-auto blob-shape shadow-2xl relative z-10"
                     data-alt="A artistic composite of St. Charles Matric School facilities shown through an abstract organic blob mask. The image features high-quality interior classrooms, science labs, and well-maintained playgrounds. Bright, natural lighting highlights the clean and modern educational environment with a sophisticated violet and white color palette."
-                    src="https://lh3.googleusercontent.com/aida/ADBb0uh-fxdTfS_esDU8ginhOvBfnKfUXMCwQvUljj1bnC_9y_Vy5hgNvuinRGLkCAmjtRrdQaOWe1yEQaVNWz7d8oPwE4sdCrgt2IZ81ZfUq3UE4tyfwP7u8APnriwXHiz38Z6Xd3NTeOkgNaH3dpWlYuoAGZrJMkiMnYnnDvXw_mh-pupxIeaRw2lGubMPbGYCuuMsW2teRKlwDPGPTtip9Am7486XDP_0Zr-07ofl_5VgrZ9Y8m8xP9pMeDw" />
+                    src="assets/about.png" />
             </div>
         </div>
     </section>
@@ -388,6 +443,51 @@
                     <p class="text-on-surface-variant text-label-md">Building character alongside curriculum.</p>
                 </div>
             </div>
+
+             <div class="grid grid-cols-1 md:grid-cols-3 py-5 lg:grid-cols-5 gap-6">
+                <!-- Why Cards -->
+                <div class="glass-effect p-8 rounded-3xl group hover:-translate-y-2 transition-all duration-300">
+                    <div
+                        class="w-14 h-14 bg-primary-container rounded-2xl flex items-center justify-center text-white mb-6 group-hover:bg-secondary-container group-hover:text-midnight transition-colors">
+                        <span class="material-symbols-outlined text-[32px]">school</span>
+                    </div>
+                    <h4 class="text-midnight font-headline-md text-headline-md mb-2">Student Centered</h4>
+                    <p class="text-on-surface-variant text-label-md">Personalized learning paths for every child.</p>
+                </div>
+                <div class="glass-effect p-8 rounded-3xl group hover:-translate-y-2 transition-all duration-300">
+                    <div
+                        class="w-14 h-14 bg-primary-container rounded-2xl flex items-center justify-center text-white mb-6 group-hover:bg-secondary-container group-hover:text-midnight transition-colors">
+                        <span class="material-symbols-outlined text-[32px]">biotech</span>
+                    </div>
+                    <h4 class="text-midnight font-headline-md text-headline-md mb-2">Modern Labs</h4>
+                    <p class="text-on-surface-variant text-label-md">State-of-the-art facilities for research.</p>
+                </div>
+                <div class="glass-effect p-8 rounded-3xl group hover:-translate-y-2 transition-all duration-300">
+                    <div
+                        class="w-14 h-14 bg-primary-container rounded-2xl flex items-center justify-center text-white mb-6 group-hover:bg-secondary-container group-hover:text-midnight transition-colors">
+                        <span class="material-symbols-outlined text-[32px]">sports_soccer</span>
+                    </div>
+                    <h4 class="text-midnight font-headline-md text-headline-md mb-2">Sports Hub</h4>
+                    <p class="text-on-surface-variant text-label-md">Emphasis on physical fitness and grit.</p>
+                </div>
+                <div class="glass-effect p-8 rounded-3xl group hover:-translate-y-2 transition-all duration-300">
+                    <div
+                        class="w-14 h-14 bg-primary-container rounded-2xl flex items-center justify-center text-white mb-6 group-hover:bg-secondary-container group-hover:text-midnight transition-colors">
+                        <span class="material-symbols-outlined text-[32px]">groups</span>
+                    </div>
+                    <h4 class="text-midnight font-headline-md text-headline-md mb-2">Community</h4>
+                    <p class="text-on-surface-variant text-label-md">A tight-knit family of learners and mentors.</p>
+                </div>
+                <div class="glass-effect p-8 rounded-3xl group hover:-translate-y-2 transition-all duration-300">
+                    <div
+                        class="w-14 h-14 bg-primary-container rounded-2xl flex items-center justify-center text-white mb-6 group-hover:bg-secondary-container group-hover:text-midnight transition-colors">
+                        <span class="material-symbols-outlined text-[32px]">self_improvement</span>
+                    </div>
+                    <h4 class="text-midnight font-headline-md text-headline-md mb-2">Moral Values</h4>
+                    <p class="text-on-surface-variant text-label-md">Building character alongside curriculum.</p>
+                </div>
+            </div>
+            
         </div>
     </section>
     <!-- Principal's Message -->
@@ -400,7 +500,7 @@
                     </div>
                     <img alt="Principal" class="w-64 h-64 object-cover rounded-full border-8 border-white shadow-xl"
                         data-alt="A professional portrait of the School Principal, Mr. Sekar, dressed in formal attire. He is seated in a dignified office setting with a shelf of books in the soft-focus background. The lighting is soft and flattering, emphasizing a trustworthy and scholarly presence. The overall aesthetic is professional, academic, and warm."
-                        src="https://lh3.googleusercontent.com/aida-public/AB6AXuDvlkCRkk_mah9Qd9Ho-6gIpmMh_EY5YUutCooEaxe-dh_YSUqanMEKHm6qf12-GTfTjDb9pUdkvXlBjmq_LrD-MtFMxeIUQscfZngF_xEjKuV8DRFsROpGqiQZCnA_8rKZ5QKJZYto_C8KOq6zRXfkt3O1KLXInQuwD1YHYpXm32WM74cLXSUXpSv_0S7t3yTgHyjCaOAmIHS4WG2t0W4DXlAKpznvMb49CqwGVxw_UiRoZT-U8ioD7G0XpuOT6WUkQFbiAZKOIm0" />
+                        src="assets/prinp.png" />
                 </div>
                 <div class="mt-6">
                     <h3 class="font-headline-lg text-headline-lg text-primary">MR. SEKAR M.A., B.Ed.</h3>
@@ -410,7 +510,7 @@
             <div class="w-full lg:w-2/3">
                 <span class="material-symbols-outlined text-secondary-container text-[64px] opacity-40 mb-4"
                     style="font-variation-settings: 'FILL' 1;">format_quote</span>
-                <h3 class="font-headline-lg text-headline-lg text-midnight mb-6">Walking with God through Education</h3>
+                <h3 class="font-headline-lg text-headline-lg text-midnight mb-6">Principal’s Message</h3>
                 <div class="space-y-4 text-on-surface-variant text-body-lg italic leading-relaxed">
                     <p>“As per the ancient Indian culture, education means walking with God. Education leads to removal
                         of darkness as we trot along God. It is an everlasting light to enlighten our minds and hearts.”
@@ -424,7 +524,7 @@
         </div>
     </section>
     <!-- News & Video Section -->
-    <section class="py-margin-desktop">
+    <section class="py-margin-desktop" style="background-color: #792485;">
         <div class="max-w-container-max mx-auto px-margin-desktop grid grid-cols-1 lg:grid-cols-2 gap-12">
             <!-- News Column -->
             <div>
@@ -470,7 +570,7 @@
                 <img alt="Latest Video"
                     class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
                     data-alt="A vibrant still from a school video featuring students in their classic white and purple uniforms gathered for a campus event. The image shows a group of smiling children with the modern school facilities in the background. The lighting is bright and cheerful, reflecting a positive educational environment. A stylized play button icon is overlaid on the center of the image."
-                    src="https://lh3.googleusercontent.com/aida/ADBb0uhpQIEo91WQApF4ploS6qYh2oPG_SHXg9BzjJDmyGpC5jB5Jbdit99GlWy6l7QuPdU9bTcUMlcGrLEc1F8CLeEI9UKdnYRnP_QFCUFuttuNmT1Q-ZNT3jORNxLKyHUpYnAg8bdVZbB1zTEZ89f4xqHECW9sbP63IRg-rR0VZelczZ6ld6kUrRvcj39vQnEeHcZoQQlbg6kfvYupIUGh0G4HyCOHBqBdlU8iB9VeVE3KjJW5nTRTnKy2Yrw" />
+                    src="assets/video.jpg" />
                 <div
                     class="absolute inset-0 bg-midnight/40 group-hover:bg-midnight/20 transition-all flex items-center justify-center">
                     <div class="relative">
@@ -502,22 +602,23 @@
                 <div class="flex-none w-[300px] md:w-[450px] snap-start overflow-hidden rounded-3xl group">
                     <img alt="Gallery 1"
                         class="w-full h-[300px] object-cover group-hover:scale-105 transition-transform duration-700 shadow-lg"
-                        src="https://lh3.googleusercontent.com/aida/ADBb0uhGDXTifTzHII_bm--RInoj8ceYU9WKq_PYzDpytr7Yws3Vw3aIUsa5JzvFdLs_A409kCcy57mjPI2F8imGX6asdMxiRCslW-PgPhiyTrA2NmkbHQ-7medjBFfq-cYQD1iHi3Kt8h7RHZTORRf9cZ2wXJ9wqA0vRw-PHR-vBvINBeDMkDOh5Fl-XwMLh6XMQ59mlqD5keqmmcIBVyHvPkOBpedBi2ghhw8j9FtFL2uQ-N2_L3uFtXSpzA" />
+                        src="assets/gallery01.jpeg
+                        " />
                 </div>
                 <div class="flex-none w-[300px] md:w-[450px] snap-start overflow-hidden rounded-3xl group">
                     <img alt="Gallery 2"
                         class="w-full h-[300px] object-cover group-hover:scale-105 transition-transform duration-700 shadow-lg"
-                        src="https://lh3.googleusercontent.com/aida/ADBb0ugLrARrTASsDRSMkvh0c9M9nSbMRUJD81jxt_38N2AsNZBGDvGg8nDerB-fQMIALidQZZnOJ8rZhKTj3Ark1cEHGw6PS0PCVqesOZafZiHBxfXnJ3eHRWbzeWOhuZU6S962-XKhD5eOtor0TON6H2Xz6gP247yWbj2SeG4E8Z3VRjg2AvqLEq9JgBcsM3B260s362eKPOtUPTQcS9mxJXedKFZ7f9EoVeB6ioodUJ3zd7xhUa8EIeGlsxM" />
+                        src="assets/gallery02.jpeg" />
                 </div>
                 <div class="flex-none w-[300px] md:w-[450px] snap-start overflow-hidden rounded-3xl group">
                     <img alt="Gallery 3"
                         class="w-full h-[300px] object-cover group-hover:scale-105 transition-transform duration-700 shadow-lg"
-                        src="https://lh3.googleusercontent.com/aida/ADBb0ujnPH6gCZTO_WfhGj8ASLfPpSiu-0tk2nHl9MO8dKDqwgXvvDSXLuONwsSUhbyugMr3g0BU2ejDAFOJuHpN7AvSDCmS4sRi1G9MPdu--_srFdR__9QffvZWbA8Sy9Hd_VN07OUf-zD67UVLDUrpt4SvNai3l5uU0yThyyEiCJHXOZsGiLMnosjbMIFcmf2ngkswPOEd-8BS5RjtAQ92KJ_VLgxJlvXEHpSnoVXMql9COZR6-mjlBg6gfw" />
+                        src="assets/gallery03.jpeg" />
                 </div>
                 <div class="flex-none w-[300px] md:w-[450px] snap-start overflow-hidden rounded-3xl group">
                     <img alt="Gallery 4"
                         class="w-full h-[300px] object-cover group-hover:scale-105 transition-transform duration-700 shadow-lg"
-                        src="https://lh3.googleusercontent.com/aida/ADBb0ujcR6uCTMl6wJOXKJVS5DbYRdFEzWup_1LVErAFQ9y-GWwOhvwPDKy90xWc1IGU4vhtwqL62qZA1MMqlztp0fiF8ofVvT1yefTeKIn7YkD0TOzTt_a7iu3Vd-UYCjuJQJ6U0QHhXhCtpAUyY4OlzgRcRYe36c2sDA08ny9rBKvsjJnc4JxmJ53V7YD_7eQS9N1RX3VsShx7E7blU85oJR6wVsCqS6-qINUH8pyfeDc3Ozl_wKGdC265HIo" />
+                        src="assets/gallery04.jpeg" />
                 </div>
             </div>
             <div class="flex justify-center gap-2 mt-4 md:hidden">
@@ -532,20 +633,12 @@
         <div class="max-w-container-max mx-auto px-margin-desktop grid grid-cols-1 md:grid-cols-4 gap-12 pb-12">
             <!-- Brand -->
             <div class="space-y-6">
-                <img alt="Logo" class="h-20 brightness-0 invert"
-                    src="https://lh3.googleusercontent.com/aida/ADBb0ui_5rS8kIoMXa96KxkKrTPGQuArWp8H0e2foMJRVeK0BSh8AMzUNf3Td80EnB9PdXcOzzf9fnA-lnMXcvtekoHINxyGru-JLhMn0aqqL7_aOTxiczXRwdCg7kVMHcdKDhYdNan-5aocvFeLeex4p7nu7DfxALaWvwZeN1bbkLrvri0H7eefs47UvXH84_etC1cR-afYN_fZNEZJ9kkB9vwQfzT_NDPvSZq0pTLoK0NdPgknzLLc7N6Wbfw" />
+                <img alt="Logo" class="h-30 brightness-100"
+                    src="assets/footerlogo.png" />
                 <h3 class="font-headline-lg text-headline-lg font-extrabold text-secondary-container">St. Charles School
                 </h3>
                 <p class="text-surface-variant font-body-md">Empowering generations with knowledge, character, and
                     spiritual growth since 1975.</p>
-                <div class="flex gap-4">
-                    <a class="w-10 h-10 rounded-full border border-white/20 flex items-center justify-center hover:bg-primary transition-all"
-                        href="#"><span class="material-symbols-outlined text-[20px]">groups</span></a>
-                    <a class="w-10 h-10 rounded-full border border-white/20 flex items-center justify-center hover:bg-primary transition-all"
-                        href="#"><span class="material-symbols-outlined text-[20px]">share</span></a>
-                    <a class="w-10 h-10 rounded-full border border-white/20 flex items-center justify-center hover:bg-primary transition-all"
-                        href="#"><span class="material-symbols-outlined text-[20px]">contact_page</span></a>
-                </div>
             </div>
             <!-- Quick Links -->
             <div class="space-y-6">
@@ -587,11 +680,7 @@
                 <h4 class="font-headline-md text-headline-md text-white">Location</h4>
                 <div
                     class="rounded-2xl overflow-hidden h-40 border border-white/10 grayscale hover:grayscale-0 transition-all">
-                    <div class="w-full h-full bg-surface-container-high flex items-center justify-center"
-                        data-location="Yelagiri" style="">
-                        <span class="material-symbols-outlined text-midnight text-[32px]">map</span>
-                        <span class="ml-2 font-bold text-midnight">View Map</span>
-                    </div>
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d498405.8323495731!2d78.614288!3d12.595721!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3badaaf4816af883%3A0x171c20d8639c9da8!2sYellagiri%20Road%2C%20Tamil%20Nadu%2C%20India!5e0!3m2!1sen!2sus!4v1779467044434!5m2!1sen!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
                 </div>
             </div>
         </div>
