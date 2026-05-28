@@ -209,99 +209,195 @@
 
 <body
     class="bg-background text-on-surface font-body-md selection:bg-primary-container selection:text-on-primary-container">
-    <!-- Top Bar -->
-    <div class="bg-[#4c077b] text-white" style="background-color: #4c077b; padding: 12px 0;">
-        <div class="max-w-container-max mx-auto px-margin-desktop flex flex-col md:flex-row items-center justify-between gap-3 py-4 text-sm font-medium">
-            <div class="flex flex-col sm:flex-row items-center gap-6">
-                <a class="flex items-center gap-2 hover:text-[#ffd700] transition-colors" href="tel:9786731488">
-                    <i class="fa-solid fa-phone" style="font-size: 16px;"></i>
-                    <span style="font-size: 14px;">9786731488</span>
-                </a>
-                <a class="flex items-center gap-2 hover:text-[#ffd700] transition-colors" href="mailto:charlesygy@gmail.com">
-                    <i class="fa-regular fa-envelope" style="font-size: 16px;"></i>
-                    <span style="font-size: 14px;">charlesygy@gmail.com</span>
-                </a>
-            </div>
-            <div class="flex items-center gap-4">
-                <a class="hover:text-[#ffff] transition-colors" href="#" aria-label="Facebook">
-                    <i class="fa-brands fa-facebook-f" style="font-size: 16px;"></i>
-                </a>
-                <a class="hover:text-[#ffd700] transition-colors" href="#" aria-label="Twitter">
-                    <i class="fa-brands fa-twitter" style="font-size: 16px;"></i>
-                </a>
-                <a class="hover:text-[#ffd700] transition-colors" href="#" aria-label="LinkedIn">
-                    <i class="fa-brands fa-linkedin-in" style="font-size: 16px;"></i>
-                </a>
-            </div>
-        </div>
-    </div>
-    <!-- Main Navigation (TopNavBar Component) -->
-    <header class="w-full bg-[#5a189a] text-white shadow-md">
-        <!-- Middle Bar: Brand Identity -->
-        <div class="max-w-container-max mx-auto px-margin-desktop py-6">
-            <div class="flex flex-col lg:flex-row items-center justify-center gap-4">
-                <div class="flex items-center gap-4">
-                    <img alt="St. Charles Logo" class="h-24 w-auto" src="assets/logo.png" />
-                    <div class="text-center ">
-                        <h1 class="font-extrabold text-[28px] md:text-[34px] tracking-[0.12em] uppercase leading-tight">St. Charles Matric. Hr. Sec. School</h1>
-                        <p class="font-semibold uppercase tracking-[0.3em] text-[#ffd700] text-[14px]">Yelagiri Hills</p>
-                    </div>
+    
+    <!-- HEADER SECTION START -->
+    
+    <!-- TOP HEADER BAR: Contact Info & Social Links -->
+    <div class="bg-[#5a189a] text-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex flex-col sm:flex-row items-center justify-between gap-3 py-2 sm:py-3">
+                <!-- Contact Information -->
+                <div class="flex flex-col sm:flex-row items-center gap-3 sm:gap-6 text-xs sm:text-sm">
+                    <a href="tel:9786731488" class="flex items-center gap-2 hover:text-[#ffd700] transition-colors duration-300">
+                        <i class="fa-solid fa-phone"></i>
+                        <span>9786731488</span>
+                    </a>
+                    <a href="mailto:charlesygy@gmail.com" class="flex items-center gap-2 hover:text-[#ffd700] transition-colors duration-300">
+                        <i class="fa-regular fa-envelope"></i>
+                        <span>charlesygy@gmail.com</span>
+                    </a>
                 </div>
-            </div>
-        </div>
-        <!-- Bottom Bar: Navigation -->
-        <div class="bg-white text-[#3f0075]">
-            <nav class="max-w-container-max mx-auto px-margin-desktop py-3 flex items-center justify-between gap-4">
-                <button id="nav-toggle" aria-label="Open mobile menu" aria-expanded="false"
-                    class="md:hidden text-[#3f0075] text-2xl p-3 rounded-full hover:bg-[#f3e8ff] transition">
-                    <i class="fa-solid fa-bars"></i>
-                </button>
-                <div class="hidden md:flex flex-wrap items-center gap-6 font-semibold text-sm">
-                    <a class="text-[#3f0075] border-b-2 border-[#3f0075] pb-1 transition-all" href="#">Home</a>
-                    <div class="dropdown-menu">
-                        <a class="text-[#3f0075] hover:text-[#5a189a] transition-colors cursor-pointer pb-1" href="#">About Us <i class="fa-solid fa-angle-down text-xs"></i></a>
-                        <div class="dropdown-content">
-                            <a href="#">School History</a>
-                            <a href="#">Mission & Vision</a>
-                            <a href="#">Principal's Message</a>
-                            <a href="#">Infrastructure</a>
-                            <a href="#">Achievements</a>
-                        </div>
-                    </div>
-                    <a class="text-[#3f0075] hover:text-[#5a189a] transition-colors" href="#">Management <i class="fa-solid fa-angle-down text-xs"></i></a>
-                    <a class="text-[#3f0075] hover:text-[#5a189a] transition-colors" href="#">Academics <i class="fa-solid fa-angle-down text-xs"></i></a>
-                    <a class="text-[#3f0075] hover:text-[#5a189a] transition-colors" href="#">Staff</a>
-                    <a class="text-[#3f0075] hover:text-[#5a189a] transition-colors" href="#">Students</a>
-                    <a class="text-[#3f0075] hover:text-[#5a189a] transition-colors" href="#">Parents <i class="fa-solid fa-angle-down text-xs"></i></a>
-                    <a class="text-[#3f0075] hover:text-[#5a189a] transition-colors" href="#">Gallery</a>
-                    <a class="text-[#3f0075] hover:text-[#5a189a] transition-colors" href="#">Contact Us</a>
-                </div>
-                <a class="hidden md:inline-flex items-center gap-2 bg-[#5a189a] text-white px-6 py-3 rounded-full font-bold hover:bg-[#3f0075] transition-all duration-300"
-                    href="#">
-                    <i class="fa-solid fa-user-graduate"></i>
-                    Enroll Now
-                </a>
-            </nav>
-            <div id="mobile-nav" class="md:hidden hidden border-t border-[#ece1ff] bg-white">
-                <div class="px-6 py-4 space-y-3">
-                    <a class="block text-[#3f0075] hover:text-[#5a189a] font-semibold" href="#">Home</a>
-                    <a class="block text-[#3f0075] hover:text-[#5a189a] font-semibold" href="#">About Us</a>
-                    <a class="block text-[#3f0075] hover:text-[#5a189a] font-semibold" href="#">Management</a>
-                    <a class="block text-[#3f0075] hover:text-[#5a189a] font-semibold" href="#">Academics</a>
-                    <a class="block text-[#3f0075] hover:text-[#5a189a] font-semibold" href="#">Staff</a>
-                    <a class="block text-[#3f0075] hover:text-[#5a189a] font-semibold" href="#">Students</a>
-                    <a class="block text-[#3f0075] hover:text-[#5a189a] font-semibold" href="#">Parents</a>
-                    <a class="block text-[#3f0075] hover:text-[#5a189a] font-semibold" href="#">Gallery</a>
-                    <a class="block text-[#3f0075] hover:text-[#5a189a] font-semibold" href="#">Contact Us</a>
-                    <a class="inline-flex items-center justify-center gap-2 w-full text-white bg-[#5a189a] px-4 py-3 rounded-full font-bold hover:bg-[#3f0075] transition-all"
-                        href="#">
-                        <i class="fa-solid fa-user-graduate"></i>
-                        Enroll Now
+                
+                <!-- Social Media Icons -->
+                <div class="flex items-center gap-4 text-sm">
+                    <a href="#" aria-label="Facebook" class="text-white hover:text-[#ffd700] transition-colors duration-300">
+                        <i class="fa-brands fa-facebook-f"></i>
+                    </a>
+                    <a href="#" aria-label="Twitter" class="text-white hover:text-[#ffd700] transition-colors duration-300">
+                        <i class="fa-brands fa-twitter"></i>
+                    </a>
+                    <a href="#" aria-label="LinkedIn" class="text-white hover:text-[#ffd700] transition-colors duration-300">
+                        <i class="fa-brands fa-linkedin-in"></i>
                     </a>
                 </div>
             </div>
         </div>
+    </div>
+
+    <!-- MIDDLE HEADER BAR: Logo & School Name -->
+    <header class="bg-[#5a189a] text-white shadow-lg">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4 sm:py-6">
+            <div class="flex flex-col sm:flex-row items-center justify-center gap-3 sm:gap-6">
+                <!-- School Logo -->
+                <div class="flex-shrink-0">
+                    <img alt="St. Charles Logo" class="h-16 sm:h-20 lg:h-24 w-auto" src="assets/logo.png" />
+                </div>
+                
+                <!-- School Name & Subtitle -->
+                <div class="text-center">
+                    <h1 class="font-extrabold text-lg sm:text-2xl lg:text-4xl tracking-widest uppercase leading-tight">
+                        ST. CHARLES MATRIC. HR. SEC. SCHOOL
+                    </h1>
+                    <p class="font-bold text-xs sm:text-sm lg:text-base uppercase tracking-[0.2em] text-[#ffd700] mt-1">
+                        Yelagiri Hills
+                    </p>
+                </div>
+            </div>
+        </div>
     </header>
+
+    <!-- BOTTOM HEADER BAR: Navigation Menu -->
+    <nav class="bg-white text-[#3f0075] shadow-md">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center justify-between gap-4 h-14">
+                <!-- Mobile Menu Toggle Button -->
+                <button id="nav-toggle" aria-label="Toggle mobile menu" aria-expanded="false"
+                    class="lg:hidden text-[#3f0075] text-2xl p-2 hover:bg-[#f3e8ff] rounded-lg transition-colors duration-300">
+                    <i class="fa-solid fa-bars"></i>
+                </button>
+
+                <!-- Desktop Navigation Menu -->
+                <div class="hidden lg:flex items-center gap-1">
+                    <a href="#" class="px-3 py-2 text-sm font-semibold text-[#3f0075] border-b-2 border-[#3f0075] hover:text-[#5a189a] transition-colors duration-300">
+                        Home
+                    </a>
+                    
+                    <!-- About Us Dropdown -->
+                    <div class="relative group">
+                        <a href="#" class="px-3 py-2 text-sm font-semibold text-[#3f0075] hover:text-[#5a189a] transition-colors duration-300 flex items-center gap-1">
+                            About Us
+                            <i class="fa-solid fa-angle-down text-xs"></i>
+                        </a>
+                        <div class="absolute left-0 mt-0 w-48 bg-white border-t-4 border-[#5a189a] shadow-lg rounded-b-lg opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300">
+                            <a href="#" class="block px-4 py-2 text-sm text-[#3f0075] hover:bg-[#f3e8ff] first:pt-3">School History</a>
+                            <a href="#" class="block px-4 py-2 text-sm text-[#3f0075] hover:bg-[#f3e8ff]">Mission & Vision</a>
+                            <a href="#" class="block px-4 py-2 text-sm text-[#3f0075] hover:bg-[#f3e8ff]">Principal's Message</a>
+                            <a href="#" class="block px-4 py-2 text-sm text-[#3f0075] hover:bg-[#f3e8ff]">Infrastructure</a>
+                            <a href="#" class="block px-4 py-2 text-sm text-[#3f0075] hover:bg-[#f3e8ff] last:pb-3">Achievements</a>
+                        </div>
+                    </div>
+
+                    <a href="#" class="px-3 py-2 text-sm font-semibold text-[#3f0075] hover:text-[#5a189a] transition-colors duration-300 flex items-center gap-1">
+                        Management
+                        <i class="fa-solid fa-angle-down text-xs"></i>
+                    </a>
+                    
+                    <a href="#" class="px-3 py-2 text-sm font-semibold text-[#3f0075] hover:text-[#5a189a] transition-colors duration-300 flex items-center gap-1">
+                        Academics
+                        <i class="fa-solid fa-angle-down text-xs"></i>
+                    </a>
+                    
+                    <a href="#" class="px-3 py-2 text-sm font-semibold text-[#3f0075] hover:text-[#5a189a] transition-colors duration-300">
+                        Staff
+                    </a>
+                    
+                    <a href="#" class="px-3 py-2 text-sm font-semibold text-[#3f0075] hover:text-[#5a189a] transition-colors duration-300">
+                        Students
+                    </a>
+                    
+                    <a href="#" class="px-3 py-2 text-sm font-semibold text-[#3f0075] hover:text-[#5a189a] transition-colors duration-300 flex items-center gap-1">
+                        Parents
+                        <i class="fa-solid fa-angle-down text-xs"></i>
+                    </a>
+                    
+                    <a href="#" class="px-3 py-2 text-sm font-semibold text-[#3f0075] hover:text-[#5a189a] transition-colors duration-300">
+                        Gallery
+                    </a>
+                    
+                    <a href="#" class="px-3 py-2 text-sm font-semibold text-[#3f0075] hover:text-[#5a189a] transition-colors duration-300">
+                        Contact Us
+                    </a>
+                </div>
+
+                <!-- Enroll Button (Desktop) -->
+                <a href="#" class="hidden lg:inline-flex items-center gap-2 bg-[#5a189a] text-white px-4 lg:px-6 py-2 rounded-full text-sm font-bold hover:bg-[#3f0075] transition-all duration-300 ml-auto">
+                    <i class="fa-solid fa-user-graduate"></i>
+                    <span>Enroll Now</span>
+                </a>
+            </div>
+        </div>
+
+        <!-- Mobile Navigation Menu -->
+        <div id="mobile-nav" class="hidden lg:hidden border-t border-[#ece1ff] bg-white">
+            <div class="px-4 py-4 space-y-2">
+                <a href="#" class="block px-3 py-2 text-sm font-semibold text-[#3f0075] hover:bg-[#f3e8ff] rounded-lg transition-colors duration-300">
+                    Home
+                </a>
+                <a href="#" class="block px-3 py-2 text-sm font-semibold text-[#3f0075] hover:bg-[#f3e8ff] rounded-lg transition-colors duration-300">
+                    About Us
+                </a>
+                <a href="#" class="block px-3 py-2 text-sm font-semibold text-[#3f0075] hover:bg-[#f3e8ff] rounded-lg transition-colors duration-300">
+                    Management
+                </a>
+                <a href="#" class="block px-3 py-2 text-sm font-semibold text-[#3f0075] hover:bg-[#f3e8ff] rounded-lg transition-colors duration-300">
+                    Academics
+                </a>
+                <a href="#" class="block px-3 py-2 text-sm font-semibold text-[#3f0075] hover:bg-[#f3e8ff] rounded-lg transition-colors duration-300">
+                    Staff
+                </a>
+                <a href="#" class="block px-3 py-2 text-sm font-semibold text-[#3f0075] hover:bg-[#f3e8ff] rounded-lg transition-colors duration-300">
+                    Students
+                </a>
+                <a href="#" class="block px-3 py-2 text-sm font-semibold text-[#3f0075] hover:bg-[#f3e8ff] rounded-lg transition-colors duration-300">
+                    Parents
+                </a>
+                <a href="#" class="block px-3 py-2 text-sm font-semibold text-[#3f0075] hover:bg-[#f3e8ff] rounded-lg transition-colors duration-300">
+                    Gallery
+                </a>
+                <a href="#" class="block px-3 py-2 text-sm font-semibold text-[#3f0075] hover:bg-[#f3e8ff] rounded-lg transition-colors duration-300">
+                    Contact Us
+                </a>
+                <a href="#" class="flex items-center justify-center gap-2 w-full text-white bg-[#5a189a] px-4 py-3 rounded-lg font-bold hover:bg-[#3f0075] transition-all duration-300 mt-4">
+                    <i class="fa-solid fa-user-graduate"></i>
+                    <span>Enroll Now</span>
+                </a>
+            </div>
+        </div>
+    </nav>
+    
+    <!-- HEADER SECTION END -->
+
+    <!-- Mobile Menu Toggle Script -->
+    <script>
+        const navToggle = document.getElementById('nav-toggle');
+        const mobileNav = document.getElementById('mobile-nav');
+
+        navToggle.addEventListener('click', () => {
+            mobileNav.classList.toggle('hidden');
+            navToggle.setAttribute('aria-expanded', 
+                navToggle.getAttribute('aria-expanded') === 'false' ? 'true' : 'false'
+            );
+        });
+
+        // Close mobile menu when a link is clicked
+        document.querySelectorAll('#mobile-nav a').forEach(link => {
+            link.addEventListener('click', () => {
+                mobileNav.classList.add('hidden');
+                navToggle.setAttribute('aria-expanded', 'false');
+            });
+        });
+    </script>
+
     <!-- Hero Section -->
     <section class="relative h-[85vh] overflow-hidden">
         <div class="absolute inset-0 transition-opacity duration-1000">
