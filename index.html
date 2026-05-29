@@ -1,823 +1,617 @@
 <!DOCTYPE html>
-
-<html class="scroll-smooth" lang="en">
+<html lang="en">
 
 <head>
-    <meta charset="utf-8" />
-    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
-    <title>St. Charles Matric Hr. Sec. School | Yelagiri Hills</title>
-    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&amp;family=Manrope:wght@600;700;800&amp;family=JetBrains+Mono:wght@500&amp;display=swap"
-        rel="stylesheet" />
-    <link
-        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
-        rel="stylesheet" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
-        integrity="sha512-dmF1b5v7fbvJjPBwzFzOMk6K+lfq9VZFTRG2tczUiIpk2OQ1vhjYnyGCbzVx4IeKfWvNddL8Xs5b0s0W4bG5WmA=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <script id="tailwind-config">
-        tailwind.config = {
-            darkMode: "class",
-            theme: {
-                extend: {
-                    "colors": {
-                        "surface-container-low": "#eff4ff",
-                        "on-error-container": "#93000a",
-                        "deep-violet": "#3C096C",
-                        "tertiary-fixed-dim": "#e0b6ff",
-                        "on-secondary-fixed": "#251a00",
-                        "on-surface-variant": "#4b4452",
-                        "secondary-fixed": "#ffdf9a",
-                        "primary-fixed": "#efdbff",
-                        "tertiary-fixed": "#f2daff",
-                        "primary-container": "#5a189a",
-                        "surface-alt": "#F8F9FA",
-                        "on-secondary": "#ffffff",
-                        "surface": "#f8f9ff",
-                        "surface-container-high": "#dde9ff",
-                        "on-tertiary-fixed": "#2e004e",
-                        "on-tertiary-fixed-variant": "#6a0baa",
-                        "inverse-surface": "#233144",
-                        "surface-bright": "#f8f9ff",
-                        "surface-dim": "#ccdbf4",
-                        "error-container": "#ffdad6",
-                        "on-tertiary": "#ffffff",
-                        "midnight": "#110E3D",
-                        "secondary": "#785a00",
-                        "on-primary-fixed": "#2b0052",
-                        "on-primary-fixed-variant": "#6122a1",
-                        "on-secondary-fixed-variant": "#5a4300",
-                        "surface-container": "#e6eeff",
-                        "tertiary-container": "#6200a0",
-                        "on-secondary-container": "#6d5200",
-                        "primary-fixed-dim": "#dbb8ff",
-                        "surface-variant": "#d5e3fd",
-                        "on-primary": "#ffffff",
-                        "on-tertiary-container": "#cf93ff",
-                        "surface-container-lowest": "#ffffff",
-                        "outline-variant": "#cec3d4",
-                        "error": "#ba1a1a",
-                        "on-background": "#0d1c2f",
-                        "surface-tint": "#7a3fbb",
-                        "secondary-fixed-dim": "#f8be00",
-                        "surface-container-highest": "#d5e3fd",
-                        "tertiary": "#43006f",
-                        "secondary-container": "#ffc300",
-                        "background": "#f8f9ff",
-                        "on-surface": "#0d1c2f",
-                        "primary": "#3f0075",
-                        "on-primary-container": "#c896ff",
-                        "on-error": "#ffffff",
-                        "inverse-on-surface": "#ebf1ff",
-                        "outline": "#7d7483"
-                    },
-                    "borderRadius": {
-                        "DEFAULT": "0.25rem",
-                        "lg": "0.5rem",
-                        "xl": "0.75rem",
-                        "full": "9999px"
-                    },
-                    "spacing": {
-                        "margin-tablet": "32px",
-                        "container-max": "1280px",
-                        "base": "8px",
-                        "gutter": "24px",
-                        "margin-desktop": "64px",
-                        "margin-mobile": "20px"
-                    },
-                    "fontFamily": {
-                        "body-md": ["Inter"],
-                        "body-lg": ["Inter"],
-                        "headline-md": ["Manrope"],
-                        "headline-lg": ["Manrope"],
-                        "label-sm": ["JetBrains Mono"],
-                        "headline-lg-mobile": ["Manrope"],
-                        "headline-xl": ["Manrope"],
-                        "label-md": ["JetBrains Mono"]
-                    },
-                    "fontSize": {
-                        "body-md": ["16px", { "lineHeight": "24px", "fontWeight": "400" }],
-                        "body-lg": ["18px", { "lineHeight": "28px", "fontWeight": "400" }],
-                        "headline-md": ["24px", { "lineHeight": "32px", "fontWeight": "600" }],
-                        "headline-lg": ["32px", { "lineHeight": "40px", "letterSpacing": "-0.01em", "fontWeight": "700" }],
-                        "label-sm": ["12px", { "lineHeight": "16px", "letterSpacing": "0.03em", "fontWeight": "500" }],
-                        "headline-lg-mobile": ["28px", { "lineHeight": "36px", "fontWeight": "700" }],
-                        "headline-xl": ["48px", { "lineHeight": "56px", "letterSpacing": "-0.02em", "fontWeight": "800" }],
-                        "label-md": ["14px", { "lineHeight": "20px", "letterSpacing": "0.05em", "fontWeight": "500" }]
-                    }
-                },
-            },
-        }
-    </script>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>St. Charles Matric. Hr. Sec. School - Yelagiri Hills</title>
+
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
     <style>
-        .glass-effect {
-            background: rgba(255, 255, 255, 0.85);
-            backdrop-filter: blur(12px);
-            border: 1px solid rgba(90, 24, 154, 0.1);
+        * {
+            font-family: "Poppins", sans-serif;
         }
 
-        .ticker-wrap {
-            width: 100%;
-            overflow: hidden;
-            background: #110E3D;
+        html {
+            scroll-behavior: smooth;
         }
 
-        .ticker {
-            display: inline-block;
-            white-space: nowrap;
-            animation: ticker 30s linear infinite;
+        body {
+            overflow-x: hidden;
         }
 
-        .ticker:hover {
-            animation-play-state: paused;
+        .top-bg {
+            background: linear-gradient(120deg, #a0008b 0%, #75008f 60%, #4b006e 100%);
         }
 
-        @keyframes ticker {
-            0% {
+        .main-purple {
+            background: #4b006e;
+        }
+
+        .deep-purple {
+            background: #3a0058;
+        }
+
+        .yellow-text {
+            color: #ffd500;
+        }
+
+        .hero-slide {
+            display: none;
+            animation: fade 1.2s ease-in-out;
+        }
+
+        .hero-slide.active {
+            display: block;
+        }
+
+        @keyframes fade {
+            from {
+                opacity: 0.5;
+            }
+
+            to {
+                opacity: 1;
+            }
+        }
+
+        .flash-track {
+            animation: marquee 28s linear infinite;
+        }
+
+        @keyframes marquee {
+            from {
                 transform: translateX(100%);
             }
 
-            100% {
+            to {
                 transform: translateX(-100%);
             }
         }
 
-        .blob-shape {
-            border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%;
+        .section-title {
+            font-weight: 900;
+            letter-spacing: -1px;
+        }
+
+        .blob-img {
+            border-radius: 46% 54% 52% 48% / 45% 45% 55% 55%;
+            border: 10px solid #6c1ca8;
+            outline: 4px solid #ffffff;
+            box-shadow: 0 10px 30px rgba(75, 0, 110, 0.35);
+        }
+
+        .feature-bg {
+            background:
+                linear-gradient(rgba(100, 0, 145, 0.88), rgba(100, 0, 145, 0.88)),
+                url("assets/bg_why.jpg");
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+        }
+
+        .latest-bg {
+            background: #560078;
+            position: relative;
             overflow: hidden;
         }
 
-        .hero-gradient {
-            background: linear-gradient(135deg, rgba(63, 0, 117, 0.8) 0%, rgba(17, 14, 61, 0.6) 100%);
-        }
-
-        /* Dropdown Menu Styles */
-        .dropdown-menu {
+        .particle-area {
             position: relative;
-            display: inline-block;
+            overflow: hidden;
         }
 
-        .dropdown-content {
-            display: none;
+        .particle-canvas {
             position: absolute;
-            background-color: white;
-            min-width: 220px;
-            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
-            padding: 12px 0;
-            z-index: 1;
-            border-radius: 6px;
-            top: 100%;
-            left: 0;
-            border-top: 3px solid #5a189a;
+            inset: 0;
+            width: 100%;
+            height: 100%;
+            pointer-events: none;
+            z-index: 0;
         }
 
-        .dropdown-menu:hover .dropdown-content {
-            display: block;
-        }
-
-        .dropdown-content a {
-            color: #3f0075;
-            padding: 12px 20px;
-            text-decoration: none;
-            display: block;
-            font-size: 14px;
-            font-weight: 500;
-            transition: all 0.3s ease;
-        }
-
-        .dropdown-content a:hover {
-            background-color: #f3e8ff;
-            padding-left: 24px;
-            color: #5a189a;
-        }
-
-        .dropdown-content a:first-child {
-            border-radius: 6px 6px 0 0;
-        }
-
-        .dropdown-content a:last-child {
-            border-radius: 0 0 6px 6px;
-        }
-
-        .ticker-wrap {
+        .content-layer {
             position: relative;
-            z-index: 998;
+            z-index: 2;
+        }
+
+        .reveal {
+            opacity: 0;
+            transform: translateY(45px);
+            transition: all 0.8s ease;
+        }
+
+        .reveal.active {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        .dropdown:hover .dropdown-menu {
+            display: block;
+        }
+
+        .mobile-submenu {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.35s ease;
+        }
+
+        .mobile-submenu.open {
+            max-height: 300px;
         }
     </style>
 </head>
 
-<body
-    class="bg-background text-on-surface font-body-md selection:bg-primary-container selection:text-on-primary-container">
-    
-    <!-- HEADER SECTION START -->
-    
-    <!-- TOP HEADER BAR: Contact Info & Social Links -->
-    <div class="bg-[#5a189a] text-white">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="flex flex-col sm:flex-row items-center justify-between gap-3 py-2 sm:py-3">
-                <!-- Contact Information -->
-                <div class="flex flex-col sm:flex-row items-center gap-3 sm:gap-6 text-xs sm:text-sm">
-                    <a href="tel:9786731488" class="flex items-center gap-2 hover:text-[#ffd700] transition-colors duration-300">
-                        <i class="fa-solid fa-phone"></i>
-                        <span>9786731488</span>
-                    </a>
-                    <a href="mailto:charlesygy@gmail.com" class="flex items-center gap-2 hover:text-[#ffd700] transition-colors duration-300">
-                        <i class="fa-regular fa-envelope"></i>
-                        <span>charlesygy@gmail.com</span>
-                    </a>
-                </div>
-                
-                <!-- Social Media Icons -->
-                <div class="flex items-center gap-4 text-sm">
-                    <a href="#" aria-label="Facebook" class="text-white hover:text-[#ffd700] transition-colors duration-300">
-                        <i class="fa-brands fa-facebook-f"></i>
-                    </a>
-                    <a href="#" aria-label="Twitter" class="text-white hover:text-[#ffd700] transition-colors duration-300">
-                        <i class="fa-brands fa-twitter"></i>
-                    </a>
-                    <a href="#" aria-label="LinkedIn" class="text-white hover:text-[#ffd700] transition-colors duration-300">
-                        <i class="fa-brands fa-linkedin-in"></i>
-                    </a>
-                </div>
+<body class="bg-white text-gray-800">
+
+    <!-- Top Contact Bar -->
+    <div class="top-bg text-white text-xs md:text-sm">
+        <div class="max-w-7xl mx-auto px-4 py-2 flex flex-col md:flex-row justify-between items-center gap-2">
+            <div class="flex gap-6">
+                <span><i class="fa-solid fa-phone mr-2"></i>9786731488</span>
+                <span><i class="fa-solid fa-envelope mr-2"></i>charlesygy@gmail.com</span>
+            </div>
+
+            <div class="flex gap-5">
+                <a href="#" class="hover:text-yellow-300"><i class="fa-brands fa-facebook-f"></i></a>
+                <a href="#" class="hover:text-yellow-300"><i class="fa-brands fa-twitter"></i></a>
+                <a href="#" class="hover:text-yellow-300"><i class="fa-brands fa-linkedin-in"></i></a>
             </div>
         </div>
     </div>
 
-    <!-- MIDDLE HEADER BAR: Logo & School Name -->
-    <header class="bg-[#5a189a] text-white shadow-lg">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4 sm:py-6">
-            <div class="flex flex-col sm:flex-row items-center justify-center gap-3 sm:gap-6">
-                <!-- School Logo -->
-                <div class="flex-shrink-0">
-                    <img alt="St. Charles Logo" class="h-16 sm:h-20 lg:h-24 w-auto" src="assets/logo.png" />
-                </div>
-                
-                <!-- School Name & Subtitle -->
-                <div class="text-center">
-                    <h1 class="font-extrabold text-lg sm:text-2xl lg:text-4xl tracking-widest uppercase leading-tight">
-                        ST. CHARLES MATRIC. HR. SEC. SCHOOL
-                    </h1>
-                    <p class="font-bold text-xs sm:text-sm lg:text-base uppercase tracking-[0.2em] text-[#ffd700] mt-1">
-                        Yelagiri Hills
-                    </p>
-                </div>
+    <!-- Logo Header -->
+    <section class="main-purple text-white">
+        <div
+            class="max-w-7xl mx-auto px-4 py-5 md:py-7 flex flex-col md:flex-row justify-center items-center gap-3 md:gap-5 text-center">
+
+            <div
+                class="w-24 h-24 md:w-20 md:h-20 rounded-full bg-white shadow-lg flex items-center justify-center overflow-hidden">
+                <img src="assets/logo.png" class="w-full h-full object-contain" alt="School Logo">
             </div>
+
+            <div>
+                <h1
+                    class="text-lg sm:text-xl md:text-4xl font-black tracking-[0.08em] md:tracking-[0.18em] leading-tight">
+                    ST. CHARLES MATRIC. HR. SEC. SCHOOL
+                </h1>
+                <p class="yellow-text text-base md:text-xl font-extrabold mt-2">
+                    YELAGIRI HILLS
+                </p>
+            </div>
+
+        </div>
+    </section>
+    <!-- Navigation -->
+    <header class="sticky top-0 z-50 bg-white shadow-md">
+        <div class="max-w-7xl mx-auto px-4 flex justify-between items-center">
+
+            <button id="mobileBtn" class="lg:hidden py-4 text-2xl text-purple-900">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+
+            <nav class="hidden lg:flex items-center justify-center w-full text-[16px] font-bold text-gray-800">
+                <a href="#" class="px-4 py-4 text-purple-700 hover:text-purple-900">Home</a>
+
+                <div class="relative dropdown">
+                    <button class="px-4 py-4 hover:text-purple-800">
+                        About Us <i class="fa-solid fa-angle-down text-xs ml-1"></i>
+                    </button>
+                    <div
+                        class="dropdown-menu hidden absolute top-full left-0 bg-white shadow-xl rounded-b-md w-56 z-50">
+                        <a href="#about" class="block px-4 py-3 hover:bg-purple-100">About School</a>
+                        <a href="#vision" class="block px-4 py-3 hover:bg-purple-100">Vision & Mission</a>
+                        <a href="#principal" class="block px-4 py-3 hover:bg-purple-100">Principal’s Message</a>
+                        <a href="#" class="block px-4 py-3 hover:bg-purple-100">Prospectus</a>
+                    </div>
+                </div>
+
+                <a href="#" class="px-4 py-4 hover:text-purple-800">Management</a>
+                <a href="#" class="px-4 py-4 hover:text-purple-800">Academics</a>
+                <a href="#" class="px-4 py-4 hover:text-purple-800">Staff</a>
+                <a href="#" class="px-4 py-4 hover:text-purple-800">Students</a>
+                <a href="#" class="px-4 py-4 hover:text-purple-800">Parents</a>
+                <a href="#gallery" class="px-4 py-4 hover:text-purple-800">Gallery</a>
+                <a href="#contact" class="px-4 py-4 hover:text-purple-800">Contact Us</a>
+            </nav>
+        </div>
+
+        <!-- Mobile Menu -->
+        <div id="mobileMenu" class="hidden lg:hidden bg-purple-950 text-white font-semibold">
+            <a href="#" class="block px-5 py-3 border-b border-purple-800">Home</a>
+
+            <button id="aboutMobileBtn" class="w-full text-left px-5 py-3 border-b border-purple-800">
+                About Us <i class="fa-solid fa-angle-down ml-1"></i>
+            </button>
+
+            <div id="aboutMobileMenu" class="mobile-submenu bg-purple-900">
+                <a href="#about" class="block px-8 py-3">About School</a>
+                <a href="#vision" class="block px-8 py-3">Vision & Mission</a>
+                <a href="#principal" class="block px-8 py-3">Principal’s Message</a>
+                <a href="#" class="block px-8 py-3">Prospectus</a>
+            </div>
+
+            <a href="#" class="block px-5 py-3 border-b border-purple-800">Management</a>
+            <a href="#" class="block px-5 py-3 border-b border-purple-800">Academics</a>
+            <a href="#" class="block px-5 py-3 border-b border-purple-800">Staff</a>
+            <a href="#" class="block px-5 py-3 border-b border-purple-800">Students</a>
+            <a href="#" class="block px-5 py-3 border-b border-purple-800">Parents</a>
+            <a href="#gallery" class="block px-5 py-3 border-b border-purple-800">Gallery</a>
+            <a href="#contact" class="block px-5 py-3">Contact Us</a>
         </div>
     </header>
 
-    <!-- BOTTOM HEADER BAR: Navigation Menu -->
-    <nav class="bg-white text-[#3f0075] shadow-md">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="flex items-center justify-between gap-4 h-14">
-                <!-- Mobile Menu Toggle Button -->
-                <button id="nav-toggle" aria-label="Toggle mobile menu" aria-expanded="false"
-                    class="lg:hidden text-[#3f0075] text-2xl p-2 hover:bg-[#f3e8ff] rounded-lg transition-colors duration-300">
-                    <i class="fa-solid fa-bars"></i>
-                </button>
+    <!-- Hero Slider -->
+    <section class="relative h-[300px] md:h-[560px] overflow-hidden">
+        <img class="hero-slide active w-full h-full object-cover" src="assets/slider01.jpg" alt="School Event">
+        <img class="hero-slide w-full h-full object-cover" src="assets/slider02.jpg" alt="School Students">
+        <img class="hero-slide w-full h-full object-cover" src="assets/slider02.jpg" alt="School Function">
+    </section>
 
-                <!-- Desktop Navigation Menu -->
-                <div class="hidden lg:flex items-center gap-1">
-                    <a href="#" class="px-3 py-2 text-sm font-semibold text-[#3f0075] border-b-2 border-[#3f0075] hover:text-[#5a189a] transition-colors duration-300">
-                        Home
-                    </a>
-                    
-                    <!-- About Us Dropdown -->
-                    <div class="relative group">
-                        <a href="#" class="px-3 py-2 text-sm font-semibold text-[#3f0075] hover:text-[#5a189a] transition-colors duration-300 flex items-center gap-1">
-                            About Us
-                            <i class="fa-solid fa-angle-down text-xs"></i>
-                        </a>
-                        <div class="absolute left-0 mt-0 w-48 bg-white border-t-4 border-[#5a189a] shadow-lg rounded-b-lg opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300">
-                            <a href="#" class="block px-4 py-2 text-sm text-[#3f0075] hover:bg-[#f3e8ff] first:pt-3">School History</a>
-                            <a href="#" class="block px-4 py-2 text-sm text-[#3f0075] hover:bg-[#f3e8ff]">Mission & Vision</a>
-                            <a href="#" class="block px-4 py-2 text-sm text-[#3f0075] hover:bg-[#f3e8ff]">Principal's Message</a>
-                            <a href="#" class="block px-4 py-2 text-sm text-[#3f0075] hover:bg-[#f3e8ff]">Infrastructure</a>
-                            <a href="#" class="block px-4 py-2 text-sm text-[#3f0075] hover:bg-[#f3e8ff] last:pb-3">Achievements</a>
-                        </div>
-                    </div>
-
-                    <a href="#" class="px-3 py-2 text-sm font-semibold text-[#3f0075] hover:text-[#5a189a] transition-colors duration-300 flex items-center gap-1">
-                        Management
-                        <i class="fa-solid fa-angle-down text-xs"></i>
-                    </a>
-                    
-                    <a href="#" class="px-3 py-2 text-sm font-semibold text-[#3f0075] hover:text-[#5a189a] transition-colors duration-300 flex items-center gap-1">
-                        Academics
-                        <i class="fa-solid fa-angle-down text-xs"></i>
-                    </a>
-                    
-                    <a href="#" class="px-3 py-2 text-sm font-semibold text-[#3f0075] hover:text-[#5a189a] transition-colors duration-300">
-                        Staff
-                    </a>
-                    
-                    <a href="#" class="px-3 py-2 text-sm font-semibold text-[#3f0075] hover:text-[#5a189a] transition-colors duration-300">
-                        Students
-                    </a>
-                    
-                    <a href="#" class="px-3 py-2 text-sm font-semibold text-[#3f0075] hover:text-[#5a189a] transition-colors duration-300 flex items-center gap-1">
-                        Parents
-                        <i class="fa-solid fa-angle-down text-xs"></i>
-                    </a>
-                    
-                    <a href="#" class="px-3 py-2 text-sm font-semibold text-[#3f0075] hover:text-[#5a189a] transition-colors duration-300">
-                        Gallery
-                    </a>
-                    
-                    <a href="#" class="px-3 py-2 text-sm font-semibold text-[#3f0075] hover:text-[#5a189a] transition-colors duration-300">
-                        Contact Us
-                    </a>
-                </div>
-
-                <!-- Enroll Button (Desktop) -->
-                <a href="#" class="hidden lg:inline-flex items-center gap-2 bg-[#5a189a] text-white px-4 lg:px-6 py-2 rounded-full text-sm font-bold hover:bg-[#3f0075] transition-all duration-300 ml-auto">
-                    <i class="fa-solid fa-user-graduate"></i>
-                    <span>Enroll Now</span>
-                </a>
-            </div>
+    <!-- Flash News -->
+    <section class="flex bg-purple-800 text-white overflow-hidden">
+        <div class="bg-blue-900 text-white px-4 md:px-6 py-3 text-lg md:text-2xl font-black shrink-0">
+            Flash News
         </div>
-
-        <!-- Mobile Navigation Menu -->
-        <div id="mobile-nav" class="hidden lg:hidden border-t border-[#ece1ff] bg-white">
-            <div class="px-4 py-4 space-y-2">
-                <a href="#" class="block px-3 py-2 text-sm font-semibold text-[#3f0075] hover:bg-[#f3e8ff] rounded-lg transition-colors duration-300">
-                    Home
-                </a>
-                <a href="#" class="block px-3 py-2 text-sm font-semibold text-[#3f0075] hover:bg-[#f3e8ff] rounded-lg transition-colors duration-300">
-                    About Us
-                </a>
-                <a href="#" class="block px-3 py-2 text-sm font-semibold text-[#3f0075] hover:bg-[#f3e8ff] rounded-lg transition-colors duration-300">
-                    Management
-                </a>
-                <a href="#" class="block px-3 py-2 text-sm font-semibold text-[#3f0075] hover:bg-[#f3e8ff] rounded-lg transition-colors duration-300">
-                    Academics
-                </a>
-                <a href="#" class="block px-3 py-2 text-sm font-semibold text-[#3f0075] hover:bg-[#f3e8ff] rounded-lg transition-colors duration-300">
-                    Staff
-                </a>
-                <a href="#" class="block px-3 py-2 text-sm font-semibold text-[#3f0075] hover:bg-[#f3e8ff] rounded-lg transition-colors duration-300">
-                    Students
-                </a>
-                <a href="#" class="block px-3 py-2 text-sm font-semibold text-[#3f0075] hover:bg-[#f3e8ff] rounded-lg transition-colors duration-300">
-                    Parents
-                </a>
-                <a href="#" class="block px-3 py-2 text-sm font-semibold text-[#3f0075] hover:bg-[#f3e8ff] rounded-lg transition-colors duration-300">
-                    Gallery
-                </a>
-                <a href="#" class="block px-3 py-2 text-sm font-semibold text-[#3f0075] hover:bg-[#f3e8ff] rounded-lg transition-colors duration-300">
-                    Contact Us
-                </a>
-                <a href="#" class="flex items-center justify-center gap-2 w-full text-white bg-[#5a189a] px-4 py-3 rounded-lg font-bold hover:bg-[#3f0075] transition-all duration-300 mt-4">
-                    <i class="fa-solid fa-user-graduate"></i>
-                    <span>Enroll Now</span>
-                </a>
-            </div>
-        </div>
-    </nav>
-    
-    <!-- HEADER SECTION END -->
-
-    <!-- Mobile Menu Toggle Script -->
-    <script>
-        const navToggle = document.getElementById('nav-toggle');
-        const mobileNav = document.getElementById('mobile-nav');
-
-        navToggle.addEventListener('click', () => {
-            mobileNav.classList.toggle('hidden');
-            navToggle.setAttribute('aria-expanded', 
-                navToggle.getAttribute('aria-expanded') === 'false' ? 'true' : 'false'
-            );
-        });
-
-        // Close mobile menu when a link is clicked
-        document.querySelectorAll('#mobile-nav a').forEach(link => {
-            link.addEventListener('click', () => {
-                mobileNav.classList.add('hidden');
-                navToggle.setAttribute('aria-expanded', 'false');
-            });
-        });
-    </script>
-
-    <!-- Hero Section -->
-    <section class="relative h-[85vh] overflow-hidden">
-        <div class="absolute inset-0 transition-opacity duration-1000">
-            <img alt="School Building" class="w-full h-full object-cover scale-105"
-                data-alt="A grand, modern school building of St. Charles Matric School captured during a golden hour sunset. The architecture features clean white walls and purple accents, surrounded by lush green trees and well-maintained lawns. The scene is illuminated with warm, cinematic lighting creating a prestigious and academic atmosphere with high-end architectural photography style."
-                src="assets/slider01.jpg" />
-            <div class="absolute inset-0 hero-gradient"></div>
-        </div>
-        <div
-            class="relative h-full max-w-container-max mx-auto px-margin-desktop flex flex-col justify-center items-start text-white space-y-6">
-            <div
-                class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-secondary-container text-on-secondary-container font-label-md text-label-md animate-bounce">
-                <span class="material-symbols-outlined text-[16px]"
-                    style="font-variation-settings: 'FILL' 1;">star</span>
-                ADMISSIONS OPEN 2025-26
-            </div>
-            <h2 class="font-headline-xl text-headline-xl max-w-2xl leading-tight">Empowering Minds, Shaping <span
-                    class="text-secondary-fixed">Future Leaders</span></h2>
-            <p class="font-body-lg text-body-lg max-w-xl text-surface-variant">Excellence in education within the serene
-                hills of Yelagiri. Join a tradition of academic distinction and character building.</p>
-            <div class="flex gap-4">
-                <button
-                    class="px-8 py-4 bg-primary-container text-white rounded-full font-headline-md text-body-lg hover:bg-deep-violet shadow-lg shadow-primary/20 transition-all">Explore
-                    Campus</button>
-                <button
-                    class="px-8 py-4 border-2 border-white/30 text-white rounded-full font-headline-md text-body-lg hover:bg-white/10 transition-all">Virtual
-                    Tour</button>
+        <div class="relative flex-1 overflow-hidden">
+            <div class="flash-track whitespace-nowrap py-4 text-sm font-semibold">
+                2025-2026 &nbsp;&nbsp; - &nbsp;&nbsp; X Public Time Table schedule &nbsp;&nbsp; - &nbsp;&nbsp;
+                Higher Secondary Public Examination going on 2025-2026 &nbsp;&nbsp; - &nbsp;&nbsp;
+                X Std public practical exam shows as 24/02/2025 today
             </div>
         </div>
     </section>
-    <!-- Flash News Bar -->
-    <div class="ticker-wrap py-3">
-        <div class="ticker">
-            <span class="inline-flex items-center gap-4 text-secondary-fixed font-label-md text-label-md mx-8">
-                <span class="px-2 py-0.5 bg-error text-white rounded text-[10px] uppercase font-bold">New</span>
-                ADMISSION OPEN FROM KG TO 9TH AND 11TH (2025-26)
-            </span>
-            <span class="inline-flex items-center gap-4 text-white/80 font-label-md text-label-md mx-8">
-                <span
-                    class="px-2 py-0.5 bg-primary-container text-white rounded text-[10px] uppercase font-bold">Exam</span>
-                Public examination schedule 2025-2026 released
-            </span>
-            <span class="inline-flex items-center gap-4 text-white/80 font-label-md text-label-md mx-8">
-                XI, XII and X Public practical examination schedule available
-            </span>
-        </div>
-    </div>
+
     <!-- About Section -->
-    <section class="py-margin-desktop bg-surface">
-        <div class="max-w-container-max mx-auto px-margin-desktop grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
-            <div class="space-y-8">
-                <div>
-                    <h3 class="text-primary font-headline-lg text-headline-lg mb-2">About Us</h3>
-                    <div class="h-1.5 w-24 bg-secondary rounded-full"></div>
-                </div>
-                <p class="text-on-surface-variant text-body-lg leading-relaxed">
-                 ST.CHARLES MATRIC SCHOOL, ATHANAVUR was established in 1975 and it is managed by the Pvt. Unaided. It is located in Rural area. It is located in JOLARPET block of VELLORE district of Tamil Nadu. The school consists of Grades from 1 to 11. The school is Co-educational and it have an attached pre-primary section. The school is Non-Ashram type (Govt.) in nature and is not using school building as a shift-school. English is the medium of instructions in this school. This school is approachable by all weather road. In this school academic session starts in April.
+    <section id="about" class="particle-area py-20 bg-white">
+        <canvas id="aboutParticles" class="particle-canvas"></canvas>
+
+        <div class="content-layer max-w-7xl mx-auto px-4 grid md:grid-cols-2 gap-12 items-center reveal">
+            <div>
+                <h2 class="section-title text-4xl md:text-5xl text-black mb-7">About US</h2>
+                <p class="text-gray-700 text-[15px] leading-9 max-w-xl">
+                    ST.CHARLES MATRIC SCHOOL, ATHANAVUR was established in 1975 and it is managed by the Pvt. Unaided.
+                    It is located in Rural area. It is located in JOLARPET block of VELLORE district of Tamil Nadu. The
+                    school consists of Grades from 1 to 11. The school is Co-educational and it have an attached
+                    pre-primary section. The school is Non-Ashram type (Govt.) in nature and is not using school
+                    building as a shift-school. English is the medium of instructions in this school. This school is
+                    approachable by all weather road. In this school academic session starts in April.
                 </p>
-                <div class="grid grid-cols-2 gap-6">
-                    <div class="p-6 rounded-2xl bg-white shadow-sm border border-primary/5">
-                        <span class="material-symbols-outlined text-primary text-[40px] mb-4">history_edu</span>
-                        <h4 class="font-headline-md text-headline-md mb-2">Established 1975</h4>
-                        <p class="text-label-md">Decades of educational heritage</p>
-                    </div>
-                    <div class="p-6 rounded-2xl bg-white shadow-sm border border-primary/5">
-                        <span class="material-symbols-outlined text-primary text-[40px] mb-4">location_on</span>
-                        <h4 class="font-headline-md text-headline-md mb-2">Yelagiri Hills</h4>
-                        <p class="text-label-md">A peaceful learning sanctuary</p>
-                    </div>
-                </div>
-                <button
-                    class="flex items-center gap-3 px-8 py-4 bg-midnight text-white rounded-xl font-bold hover:bg-primary transition-all">
-                    Read More <span class="material-symbols-outlined">arrow_right_alt</span>
-                </button>
+
+                <a href="#"
+                    class="inline-block mt-8 bg-purple-800 text-white px-7 py-3 rounded font-bold text-sm hover:bg-purple-950 transition">
+                    <i class="fa-solid fa-arrow-right mr-2"></i>Read More
+                </a>
             </div>
-            <div class="relative">
-                <div class="absolute -top-10 -right-10 w-48 h-48 bg-secondary/10 rounded-full blur-3xl"></div>
-                <div class="absolute -bottom-10 -left-10 w-48 h-48 bg-primary/10 rounded-full blur-3xl"></div>
-                <img alt="About School" class="w-full h-auto blob-shape shadow-2xl relative z-10"
-                    data-alt="A artistic composite of St. Charles Matric School facilities shown through an abstract organic blob mask. The image features high-quality interior classrooms, science labs, and well-maintained playgrounds. Bright, natural lighting highlights the clean and modern educational environment with a sophisticated violet and white color palette."
-                    src="assets/about.png" />
+
+            <div class="flex justify-center">
+                <img class="w-[460px] h-[400px] object-cover" src="assets/about.png" alt="School Building">
             </div>
         </div>
     </section>
-    <!-- Why Section (Glassmorphism Cards) -->
-    <section class="py-margin-desktop bg-midnight relative overflow-hidden">
-        <div class="absolute inset-0 opacity-10">
-            <div
-                class="absolute top-0 left-0 w-full h-full bg-[radial-gradient(circle_at_center,_var(--tw-gradient-stops))] from-primary via-transparent to-transparent">
+
+    <!-- Why St Charles -->
+    <section id="vision" class="feature-bg py-20 text-white">
+        <div class="max-w-7xl mx-auto px-4 reveal">
+            <h2 class="section-title text-4xl md:text-5xl text-center mb-10">
+                Why St.Charles School?
+            </h2>
+
+            <div class="grid grid-cols-2 md:grid-cols-5 gap-3">
+                <div class="bg-white/10 border border-white/10 p-7 text-center hover:bg-white/20 transition">
+                    <i class="fa-solid fa-book-open-reader text-5xl mb-5"></i>
+                    <h3 class="font-extrabold leading-tight">Student<br>Centered<br>Environment</h3>
+                </div>
+
+                <div class="bg-white/10 border border-white/10 p-7 text-center hover:bg-white/20 transition">
+                    <i class="fa-solid fa-people-group text-5xl mb-5"></i>
+                    <h3 class="font-extrabold leading-tight">Student<br>Centered<br>Environment</h3>
+                </div>
+
+                <div class="bg-white/10 border border-white/10 p-7 text-center hover:bg-white/20 transition">
+                    <i class="fa-solid fa-building-columns text-5xl mb-5"></i>
+                    <h3 class="font-extrabold leading-tight">Student<br>Centered<br>Environment</h3>
+                </div>
+
+                <div class="bg-white/10 border border-white/10 p-7 text-center hover:bg-white/20 transition">
+                    <i class="fa-solid fa-book-open text-5xl mb-5"></i>
+                    <h3 class="font-extrabold leading-tight">Student<br>Centered<br>Environment</h3>
+                </div>
+
+                <div class="bg-white/10 border border-white/10 p-7 text-center hover:bg-white/20 transition">
+                    <i class="fa-solid fa-person-chalkboard text-5xl mb-5"></i>
+                    <h3 class="font-extrabold leading-tight">Student<br>Centered<br>Environment</h3>
+                </div>
+
+                <div class="bg-white/10 border border-white/10 p-7 text-center hover:bg-white/20 transition">
+                    <i class="fa-solid fa-desk text-5xl mb-5"></i>
+                    <h3 class="font-extrabold leading-tight">Student<br>Centered<br>Environment</h3>
+                </div>
+
+                <div class="bg-white/10 border border-white/10 p-7 text-center hover:bg-white/20 transition">
+                    <i class="fa-solid fa-phone text-5xl mb-5"></i>
+                    <h3 class="font-extrabold leading-tight">Student<br>Centered<br>Environment</h3>
+                </div>
+
+                <div class="bg-white/10 border border-white/10 p-7 text-center hover:bg-white/20 transition">
+                    <i class="fa-solid fa-handshake text-5xl mb-5"></i>
+                    <h3 class="font-extrabold leading-tight">Student<br>Centered<br>Environment</h3>
+                </div>
+
+                <div class="bg-white/10 border border-white/10 p-7 text-center hover:bg-white/20 transition">
+                    <i class="fa-solid fa-head-side-virus text-5xl mb-5"></i>
+                    <h3 class="font-extrabold leading-tight">Student<br>Centered<br>Environment</h3>
+                </div>
+
+                <div class="bg-white/10 border border-white/10 p-7 text-center hover:bg-white/20 transition">
+                    <i class="fa-solid fa-hands-helping text-5xl mb-5"></i>
+                    <h3 class="font-extrabold leading-tight">Student<br>Centered<br>Environment</h3>
+                </div>
             </div>
         </div>
-        <div class="max-w-container-max mx-auto px-margin-desktop relative z-10">
-            <div class="text-center mb-16">
-                <h2 class="text-white font-headline-xl text-headline-xl mb-4">Why Choose St. Charles?</h2>
-                <p class="text-primary-fixed text-body-lg max-w-2xl mx-auto">We provide a nurturing ecosystem where
-                    every student's potential is recognized and amplified through modern pedagogy and traditional
-                    values.</p>
+    </section>
+
+    <!-- Principal Message -->
+    <section id="principal" class="py-20 bg-[#fff6f6]">
+        <div class="max-w-7xl mx-auto px-4 reveal">
+            <h2 class="section-title text-4xl md:text-5xl text-center mb-12">Principal’s Message</h2>
+
+            <div class="grid md:grid-cols-3 gap-10 items-center">
+                <div class="flex justify-center">
+                    <img src="assets/prinp.png" class="w-72 h-72 rounded-full object-cover shadow-xl" alt="Principal">
+                </div>
+
+                <div class="md:col-span-2">
+                    <p class="text-gray-700 leading-9 text-[15px]">
+                        As per the ancient Indian culture, education means walking with God. Education leads to removal
+                        of
+                        darkness as we trot along good. Education is an everlasting light to enlighten our minds and
+                        hearts.
+                        This school has a great vision to provide quality education and create citizens who will be
+                        known for
+                        their love of God, love of neighbor, and love of society, the nation, and the world at large.
+                    </p>
+                </div>
             </div>
-            <div class="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-5 gap-6">
-                <!-- Why Cards -->
-                <div class="glass-effect p-8 rounded-3xl group hover:-translate-y-2 transition-all duration-300">
-                    <div
-                        class="w-14 h-14 bg-primary-container rounded-2xl flex items-center justify-center text-white mb-6 group-hover:bg-secondary-container group-hover:text-midnight transition-colors">
-                        <span class="material-symbols-outlined text-[32px]">school</span>
+        </div>
+    </section>
+
+    <!-- Latest News and Video -->
+    <section class="latest-bg particle-area py-20 text-white">
+        <canvas id="newsParticles" class="particle-canvas"></canvas>
+
+        <div class="content-layer max-w-7xl mx-auto px-4 grid md:grid-cols-2 gap-10 items-center reveal">
+            <div>
+                <h2 class="section-title text-4xl md:text-5xl mb-8">Latest News</h2>
+
+                <div class="space-y-5">
+                    <div class="border-b border-yellow-400 pb-4">
+                        <h3 class="text-yellow-300 text-xl font-black">Grade 9 Boys Win Two Gold and One Silver in
+                            Silambam at Yercaud 2026</h3>
+                        <a href="#" class="inline-block mt-2 bg-blue-900 px-4 py-1 rounded text-xs">Read More</a>
                     </div>
-                    <h4 class="text-midnight font-headline-md text-headline-md mb-2">Student Centered</h4>
-                    <p class="text-on-surface-variant text-label-md">Personalized learning paths for every child.</p>
+
+                    <div class="border-b border-yellow-400 pb-4">
+                        <h3 class="text-yellow-300 text-xl font-black">Overall Best Performance Award at Don Bosco
+                            College Science Fest 2026</h3>
+                        <a href="#" class="inline-block mt-2 bg-blue-900 px-4 py-1 rounded text-xs">Read More</a>
+                    </div>
+
+                    <div class="border-b border-yellow-400 pb-4">
+                        <h3 class="text-yellow-300 text-xl font-black">X Std public practical exam shows as 24/02/2025
+                            today</h3>
+                        <a href="#" class="inline-block mt-2 bg-blue-900 px-4 py-1 rounded text-xs">Read More</a>
+                    </div>
                 </div>
-                <div class="glass-effect p-8 rounded-3xl group hover:-translate-y-2 transition-all duration-300">
-                    <div
-                        class="w-14 h-14 bg-primary-container rounded-2xl flex items-center justify-center text-white mb-6 group-hover:bg-secondary-container group-hover:text-midnight transition-colors">
-                        <span class="material-symbols-outlined text-[32px]">biotech</span>
-                    </div>
-                    <h4 class="text-midnight font-headline-md text-headline-md mb-2">Modern Labs</h4>
-                    <p class="text-on-surface-variant text-label-md">State-of-the-art facilities for research.</p>
+
+                <a href="#" class="inline-block mt-8 bg-pink-700 px-7 py-3 rounded font-bold text-sm hover:bg-pink-800">
+                    View All <i class="fa-solid fa-circle-arrow-right ml-1"></i>
+                </a>
+            </div>
+
+            <div class="relative h-[440px] bg-black overflow-hidden">
+                <img src="assets/video.jpg" class="w-full h-full object-cover opacity-50" alt="Latest Video">
+                <div class="absolute inset-0 flex flex-col items-center justify-center">
+                    <h2 class="section-title text-4xl md:text-5xl mb-6">Latest Video</h2>
+                    <button
+                        class="w-16 h-16 rounded-full bg-pink-600 flex items-center justify-center hover:scale-110 transition">
+                        <i class="fa-solid fa-play"></i>
+                    </button>
                 </div>
-                <div class="glass-effect p-8 rounded-3xl group hover:-translate-y-2 transition-all duration-300">
-                    <div
-                        class="w-14 h-14 bg-primary-container rounded-2xl flex items-center justify-center text-white mb-6 group-hover:bg-secondary-container group-hover:text-midnight transition-colors">
-                        <span class="material-symbols-outlined text-[32px]">sports_soccer</span>
-                    </div>
-                    <h4 class="text-midnight font-headline-md text-headline-md mb-2">Sports Hub</h4>
-                    <p class="text-on-surface-variant text-label-md">Emphasis on physical fitness and grit.</p>
-                </div>
-                <div class="glass-effect p-8 rounded-3xl group hover:-translate-y-2 transition-all duration-300">
-                    <div
-                        class="w-14 h-14 bg-primary-container rounded-2xl flex items-center justify-center text-white mb-6 group-hover:bg-secondary-container group-hover:text-midnight transition-colors">
-                        <span class="material-symbols-outlined text-[32px]">groups</span>
-                    </div>
-                    <h4 class="text-midnight font-headline-md text-headline-md mb-2">Community</h4>
-                    <p class="text-on-surface-variant text-label-md">A tight-knit family of learners and mentors.</p>
-                </div>
-                <div class="glass-effect p-8 rounded-3xl group hover:-translate-y-2 transition-all duration-300">
-                    <div
-                        class="w-14 h-14 bg-primary-container rounded-2xl flex items-center justify-center text-white mb-6 group-hover:bg-secondary-container group-hover:text-midnight transition-colors">
-                        <span class="material-symbols-outlined text-[32px]">self_improvement</span>
-                    </div>
-                    <h4 class="text-midnight font-headline-md text-headline-md mb-2">Moral Values</h4>
-                    <p class="text-on-surface-variant text-label-md">Building character alongside curriculum.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Latest Event Gallery -->
+    <section id="gallery" class="py-14 bg-white">
+        <div class="max-w-7xl mx-auto px-4 reveal">
+            <h2 class="section-title text-4xl md:text-5xl text-center mb-8">Latest Event Gallery</h2>
+
+            <div class="grid md:grid-cols-3 gap-3">
+                <img src="assets/gallery01.jpeg"
+                    class="h-40 w-full object-cover rounded-md border-4 border-yellow-400 hover:scale-105 transition"
+                    alt="Event">
+                <img src="assets/gallery02.jpeg"
+                    class="h-40 w-full object-cover rounded-md border-4 border-yellow-400 hover:scale-105 transition"
+                    alt="Event">
+                <img src="assets/gallery03.jpeg"
+                    class="h-40 w-full object-cover rounded-md border-4 border-yellow-400 hover:scale-105 transition"
+                    alt="Event">
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer id="contact" class="deep-purple text-white pt-12">
+        <div class="max-w-7xl mx-auto px-4 grid md:grid-cols-4 gap-10 pb-10">
+
+            <div>
+                <div class="w-25 h-25 p-3">
+                    <img src="assets/footerlogo.png" class="w-full h-full object-contain" alt="Logo">
                 </div>
             </div>
 
-             <div class="grid grid-cols-1 md:grid-cols-3 py-5 lg:grid-cols-5 gap-6">
-                <!-- Why Cards -->
-                <div class="glass-effect p-8 rounded-3xl group hover:-translate-y-2 transition-all duration-300">
-                    <div
-                        class="w-14 h-14 bg-primary-container rounded-2xl flex items-center justify-center text-white mb-6 group-hover:bg-secondary-container group-hover:text-midnight transition-colors">
-                        <span class="material-symbols-outlined text-[32px]">school</span>
-                    </div>
-                    <h4 class="text-midnight font-headline-md text-headline-md mb-2">Student Centered</h4>
-                    <p class="text-on-surface-variant text-label-md">Personalized learning paths for every child.</p>
-                </div>
-                <div class="glass-effect p-8 rounded-3xl group hover:-translate-y-2 transition-all duration-300">
-                    <div
-                        class="w-14 h-14 bg-primary-container rounded-2xl flex items-center justify-center text-white mb-6 group-hover:bg-secondary-container group-hover:text-midnight transition-colors">
-                        <span class="material-symbols-outlined text-[32px]">biotech</span>
-                    </div>
-                    <h4 class="text-midnight font-headline-md text-headline-md mb-2">Modern Labs</h4>
-                    <p class="text-on-surface-variant text-label-md">State-of-the-art facilities for research.</p>
-                </div>
-                <div class="glass-effect p-8 rounded-3xl group hover:-translate-y-2 transition-all duration-300">
-                    <div
-                        class="w-14 h-14 bg-primary-container rounded-2xl flex items-center justify-center text-white mb-6 group-hover:bg-secondary-container group-hover:text-midnight transition-colors">
-                        <span class="material-symbols-outlined text-[32px]">sports_soccer</span>
-                    </div>
-                    <h4 class="text-midnight font-headline-md text-headline-md mb-2">Sports Hub</h4>
-                    <p class="text-on-surface-variant text-label-md">Emphasis on physical fitness and grit.</p>
-                </div>
-                <div class="glass-effect p-8 rounded-3xl group hover:-translate-y-2 transition-all duration-300">
-                    <div
-                        class="w-14 h-14 bg-primary-container rounded-2xl flex items-center justify-center text-white mb-6 group-hover:bg-secondary-container group-hover:text-midnight transition-colors">
-                        <span class="material-symbols-outlined text-[32px]">groups</span>
-                    </div>
-                    <h4 class="text-midnight font-headline-md text-headline-md mb-2">Community</h4>
-                    <p class="text-on-surface-variant text-label-md">A tight-knit family of learners and mentors.</p>
-                </div>
-                <div class="glass-effect p-8 rounded-3xl group hover:-translate-y-2 transition-all duration-300">
-                    <div
-                        class="w-14 h-14 bg-primary-container rounded-2xl flex items-center justify-center text-white mb-6 group-hover:bg-secondary-container group-hover:text-midnight transition-colors">
-                        <span class="material-symbols-outlined text-[32px]">self_improvement</span>
-                    </div>
-                    <h4 class="text-midnight font-headline-md text-headline-md mb-2">Moral Values</h4>
-                    <p class="text-on-surface-variant text-label-md">Building character alongside curriculum.</p>
-                </div>
-            </div>
-            
-        </div>
-    </section>
-    <!-- Principal's Message -->
-    <section class="py-margin-desktop bg-surface-alt">
-        <div class="max-w-container-max mx-auto px-margin-desktop flex flex-col lg:flex-row gap-16 items-center">
-            <div class="w-full lg:w-1/3 text-center">
-                <div class="relative inline-block">
-                    <div
-                        class="absolute -inset-4 border-2 border-secondary rounded-full border-dashed animate-[spin_10s_linear_infinite]">
-                    </div>
-                    <img alt="Principal" class="w-64 h-64 object-cover rounded-full border-8 border-white shadow-xl"
-                        data-alt="A professional portrait of the School Principal, Mr. Sekar, dressed in formal attire. He is seated in a dignified office setting with a shelf of books in the soft-focus background. The lighting is soft and flattering, emphasizing a trustworthy and scholarly presence. The overall aesthetic is professional, academic, and warm."
-                        src="assets/prinp.png" />
-                </div>
-                <div class="mt-6">
-                    <h3 class="font-headline-lg text-headline-lg text-primary">MR. SEKAR M.A., B.Ed.</h3>
-                    <p class="text-secondary font-label-md uppercase tracking-widest font-bold">Principal</p>
-                </div>
-            </div>
-            <div class="w-full lg:w-2/3">
-                <span class="material-symbols-outlined text-secondary-container text-[64px] opacity-40 mb-4"
-                    style="font-variation-settings: 'FILL' 1;">format_quote</span>
-                <h3 class="font-headline-lg text-headline-lg text-midnight mb-6">Principal’s Message</h3>
-                <div class="space-y-4 text-on-surface-variant text-body-lg italic leading-relaxed">
-                    <p>“As per the ancient Indian culture, education means walking with God. Education leads to removal
-                        of darkness as we trot along God. It is an everlasting light to enlighten our minds and hearts.”
-                    </p>
-                    <p class="not-italic">This school has a great vision to provide quality education and create
-                        citizens who will be known for their love of God, love of neighbor, and love of society. Our
-                        purpose is the development of children from within, freeing them from conditioning that might
-                        prevent their growth into fully integrated human beings.</p>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- News & Video Section -->
-    <section class="py-margin-desktop" style="background-color: #792485;">
-        <div class="max-w-container-max mx-auto px-margin-desktop grid grid-cols-1 lg:grid-cols-2 gap-12">
-            <!-- News Column -->
             <div>
-                <div class="flex justify-between items-end mb-8">
-                    <h2 class="font-headline-lg text-headline-lg text-midnight">Latest School News</h2>
-                    <a class="text-primary font-bold hover:underline" href="#">View All Updates</a>
-                </div>
-                <div class="space-y-6">
-                    <article
-                        class="p-6 rounded-2xl bg-white border border-primary/10 hover:shadow-lg transition-all group">
-                        <span
-                            class="px-3 py-1 bg-secondary-container text-on-secondary-container text-label-sm rounded-md font-bold inline-block mb-3">ACHIEVEMENT</span>
-                        <h4
-                            class="font-headline-md text-headline-md text-midnight group-hover:text-primary transition-colors">
-                            Grade 9 Boys Win Two Gold and One Silver in Silambam at Yercaud 2026</h4>
-                        <div class="flex items-center gap-4 mt-4 text-label-md text-on-surface-variant">
-                            <span class="flex items-center gap-1"><span
-                                    class="material-symbols-outlined text-[16px]">calendar_month</span> March 02,
-                                2026</span>
-                            <a class="text-primary font-bold flex items-center gap-1" href="#">Read More <span
-                                    class="material-symbols-outlined text-[16px]">open_in_new</span></a>
-                        </div>
-                    </article>
-                    <article
-                        class="p-6 rounded-2xl bg-white border border-primary/10 hover:shadow-lg transition-all group">
-                        <span
-                            class="px-3 py-1 bg-tertiary-fixed text-on-tertiary-fixed text-label-sm rounded-md font-bold inline-block mb-3">EVENTS</span>
-                        <h4
-                            class="font-headline-md text-headline-md text-midnight group-hover:text-primary transition-colors">
-                            Overall Best Performance Award at Don Bosco College Science Fest 2026</h4>
-                        <div class="flex items-center gap-4 mt-4 text-label-md text-on-surface-variant">
-                            <span class="flex items-center gap-1"><span
-                                    class="material-symbols-outlined text-[16px]">calendar_month</span> Feb 28,
-                                2026</span>
-                            <a class="text-primary font-bold flex items-center gap-1" href="#">Read More <span
-                                    class="material-symbols-outlined text-[16px]">open_in_new</span></a>
-                        </div>
-                    </article>
-                </div>
-            </div>
-            <!-- Video Column -->
-            <div class="relative group cursor-pointer overflow-hidden rounded-3xl">
-                <img alt="Latest Video"
-                    class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
-                    data-alt="A vibrant still from a school video featuring students in their classic white and purple uniforms gathered for a campus event. The image shows a group of smiling children with the modern school facilities in the background. The lighting is bright and cheerful, reflecting a positive educational environment. A stylized play button icon is overlaid on the center of the image."
-                    src="assets/video.jpg" />
-                <div
-                    class="absolute inset-0 bg-midnight/40 group-hover:bg-midnight/20 transition-all flex items-center justify-center">
-                    <div class="relative">
-                        <div class="absolute -inset-8 bg-white/20 rounded-full animate-ping"></div>
-                        <div
-                            class="w-20 h-20 bg-primary-container text-white rounded-full flex items-center justify-center shadow-2xl relative z-10 transition-transform group-hover:scale-110">
-                            <span class="material-symbols-outlined text-[40px]"
-                                style="font-variation-settings: 'FILL' 1;">play_arrow</span>
-                        </div>
-                    </div>
-                </div>
-                <div class="absolute bottom-8 left-8 text-white">
-                    <h3 class="font-headline-lg text-headline-lg">Campus Highlights 2025</h3>
-                    <p class="text-primary-fixed opacity-90">Watch our journey of excellence</p>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- Gallery Section (Masonry-like Grid) -->
-    <section class="py-margin-desktop bg-surface-container-low">
-        <div class="max-w-container-max mx-auto px-margin-desktop">
-            <div class="text-center mb-12">
-                <h2 class="font-headline-xl text-headline-xl text-primary">Event Gallery</h2>
-                <p class="text-on-surface-variant text-body-lg">Capturing the moments that define our student
-                    experience.</p>
-            </div>
-            <div class="flex flex-nowrap overflow-x-auto gap-6 pb-8 snap-x scrollbar-hide focus:outline-none"
-                style="-ms-overflow-style: none; scrollbar-width: none;">
-                <div class="flex-none w-[300px] md:w-[450px] snap-start overflow-hidden rounded-3xl group">
-                    <img alt="Gallery 1"
-                        class="w-full h-[300px] object-cover group-hover:scale-105 transition-transform duration-700 shadow-lg"
-                        src="assets/gallery01.jpeg
-                        " />
-                </div>
-                <div class="flex-none w-[300px] md:w-[450px] snap-start overflow-hidden rounded-3xl group">
-                    <img alt="Gallery 2"
-                        class="w-full h-[300px] object-cover group-hover:scale-105 transition-transform duration-700 shadow-lg"
-                        src="assets/gallery02.jpeg" />
-                </div>
-                <div class="flex-none w-[300px] md:w-[450px] snap-start overflow-hidden rounded-3xl group">
-                    <img alt="Gallery 3"
-                        class="w-full h-[300px] object-cover group-hover:scale-105 transition-transform duration-700 shadow-lg"
-                        src="assets/gallery03.jpeg" />
-                </div>
-                <div class="flex-none w-[300px] md:w-[450px] snap-start overflow-hidden rounded-3xl group">
-                    <img alt="Gallery 4"
-                        class="w-full h-[300px] object-cover group-hover:scale-105 transition-transform duration-700 shadow-lg"
-                        src="assets/gallery04.jpeg" />
-                </div>
-            </div>
-            <div class="flex justify-center gap-2 mt-4 md:hidden">
-                <div class="w-2 h-2 rounded-full bg-primary"></div>
-                <div class="w-2 h-2 rounded-full bg-primary/20"></div>
-                <div class="w-2 h-2 rounded-full bg-primary/20"></div>
-            </div>
-        </div>
-    </section>
-    <!-- Footer Component -->
-    <footer class="bg-midnight text-primary-fixed pt-margin-desktop">
-        <div class="max-w-container-max mx-auto px-margin-desktop grid grid-cols-1 md:grid-cols-4 gap-12 pb-12">
-            <!-- Brand -->
-            <div class="space-y-6">
-                <img alt="Logo" class="h-30 brightness-100"
-                    src="assets/footerlogo.png" />
-                <h3 class="font-headline-lg text-headline-lg font-extrabold text-secondary-container">St. Charles School
-                </h3>
-                <p class="text-surface-variant font-body-md">Empowering generations with knowledge, character, and
-                    spiritual growth since 1975.</p>
-            </div>
-            <!-- Quick Links -->
-            <div class="space-y-6">
-                <h4 class="font-headline-md text-headline-md text-white">Quick Links</h4>
-                <ul class="space-y-3 font-label-md">
-                    <li><a class="text-surface-variant hover:text-secondary-fixed transition-transform hover:translate-x-1 inline-block"
-                            href="#">Curriculum</a></li>
-                    <li><a class="text-surface-variant hover:text-secondary-fixed transition-transform hover:translate-x-1 inline-block"
-                            href="#">Sports Academy</a></li>
-                    <li><a class="text-surface-variant hover:text-secondary-fixed transition-transform hover:translate-x-1 inline-block"
-                            href="#">Scholarships</a></li>
-                    <li><a class="text-surface-variant hover:text-secondary-fixed transition-transform hover:translate-x-1 inline-block"
-                            href="#">Mandatory Disclosure</a></li>
-                    <li><a class="text-surface-variant hover:text-secondary-fixed transition-transform hover:translate-x-1 inline-block"
-                            href="#">Privacy Policy</a></li>
+                <h3 class="text-xl font-bold mb-4">Quick Links</h3>
+                <ul class="space-y-2 text-sm">
+                    <li><i class="fa-solid fa-angle-right text-yellow-400 mr-2"></i>Home</li>
+                    <li><i class="fa-solid fa-angle-right text-yellow-400 mr-2"></i>About</li>
+                    <li><i class="fa-solid fa-angle-right text-yellow-400 mr-2"></i>Academics</li>
+                    <li><i class="fa-solid fa-angle-right text-yellow-400 mr-2"></i>Administration</li>
+                    <li><i class="fa-solid fa-angle-right text-yellow-400 mr-2"></i>Facilities</li>
                 </ul>
             </div>
-            <!-- Address -->
-            <div class="space-y-6">
-                <h4 class="font-headline-md text-headline-md text-white">Contact Info</h4>
-                <div class="space-y-4">
-                    <div class="flex gap-3">
-                        <span class="material-symbols-outlined text-secondary-container">location_on</span>
-                        <p class="text-surface-variant">St. Charles Matric. Hr. Sec. School - Athanavur - Yelagiri Hills
-                        </p>
-                    </div>
-                    <div class="flex gap-3">
-                        <span class="material-symbols-outlined text-secondary-container">call</span>
-                        <p class="text-surface-variant">9786731488</p>
-                    </div>
-                    <div class="flex gap-3">
-                        <span class="material-symbols-outlined text-secondary-container">mail</span>
-                        <p class="text-surface-variant">charlesygy@gmail.com</p>
-                    </div>
-                </div>
+
+            <div>
+                <h3 class="text-xl font-bold mb-4">Address</h3>
+                <p class="text-sm mb-3"><i class="fa-solid fa-location-dot text-yellow-400 mr-2"></i>St. Charles Matric.
+                    Hr. Sec. School - Athanavur - Yelagiri Hills</p>
+                <p class="text-sm mb-3"><i class="fa-solid fa-phone text-yellow-400 mr-2"></i>9786731488</p>
+                <p class="text-sm"><i class="fa-solid fa-envelope text-yellow-400 mr-2"></i>charlesygy@gmail.com</p>
             </div>
-            <!-- Newsletter/Map -->
-            <div class="space-y-6">
-                <h4 class="font-headline-md text-headline-md text-white">Location</h4>
-                <div
-                    class="rounded-2xl overflow-hidden h-40 border border-white/10 grayscale hover:grayscale-0 transition-all">
-                    <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d498405.8323495731!2d78.614288!3d12.595721!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3badaaf4816af883%3A0x171c20d8639c9da8!2sYellagiri%20Road%2C%20Tamil%20Nadu%2C%20India!5e0!3m2!1sen!2sus!4v1779467044434!5m2!1sen!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-                </div>
+
+            <div>
+                <h3 class="text-xl font-bold mb-4">Location</h3>
+                <iframe class="w-full h-36 rounded"
+                    src="https://maps.google.com/maps?q=Yelagiri%20Hills&t=&z=12&ie=UTF8&iwloc=&output=embed">
+                </iframe>
             </div>
         </div>
-        <div class="border-t border-primary-container/20 py-8 text-center text-label-sm">
-            <p class="text-surface-variant">© 2024 St. Charles Matric Hr. Sec. School. All Rights Reserved. | Powered by
-                <span class="text-secondary-container font-bold">BoscoSoft</span></p>
+
+        <div class="bg-[#2d0044] text-center text-xs py-4">
+            Copyright © 2026 St. Charles Matric. Hr. Sec. School - Yelagiri | Powered by <span
+                class="text-yellow-400 font-bold">BoscoSoft</span>
         </div>
     </footer>
-    <button
-        class="fixed bottom-8 right-8 w-12 h-12 bg-primary-container text-white rounded-full flex items-center justify-center shadow-2xl opacity-0 translate-y-10 transition-all duration-300 hover:bg-deep-violet z-50"
-        id="scrollToTop">
-        <span class="material-symbols-outlined">arrow_upward</span>
-    </button>
+
     <script>
-        // Scroll to Top Interaction
-        const scrollBtn = document.getElementById('scrollToTop');
-        window.addEventListener('scroll', () => {
-            if (window.scrollY > 500) {
-                scrollBtn.classList.remove('opacity-0', 'translate-y-10');
-                scrollBtn.classList.add('opacity-100', 'translate-y-0');
-            } else {
-                scrollBtn.classList.add('opacity-0', 'translate-y-10');
-                scrollBtn.classList.remove('opacity-100', 'translate-y-0');
-            }
-        });
-        scrollBtn.addEventListener('click', () => {
-            window.scrollTo({ top: 0, behavior: 'smooth' });
+        // Mobile menu toggle
+        const mobileBtn = document.getElementById("mobileBtn");
+        const mobileMenu = document.getElementById("mobileMenu");
+
+        mobileBtn.addEventListener("click", () => {
+            mobileMenu.classList.toggle("hidden");
+
+            mobileBtn.innerHTML = mobileMenu.classList.contains("hidden")
+                ? '<i class="fa-solid fa-bars"></i>'
+                : '<i class="fa-solid fa-xmark"></i>';
         });
 
-        // Header Transparency on Scroll
-        const header = document.querySelector('header');
-        window.addEventListener('scroll', () => {
-            if (window.scrollY > 50) {
-                header.classList.add('py-2', 'shadow-2xl');
-                header.classList.remove('py-4', 'shadow-xl');
-            } else {
-                header.classList.add('py-4', 'shadow-xl');
-                header.classList.remove('py-2', 'shadow-2xl');
+        // Mobile about submenu toggle
+        const aboutMobileBtn = document.getElementById("aboutMobileBtn");
+        const aboutMobileMenu = document.getElementById("aboutMobileMenu");
+
+        aboutMobileBtn.addEventListener("click", () => {
+            aboutMobileMenu.classList.toggle("open");
+        });
+
+        // Hero slider
+        const slides = document.querySelectorAll(".hero-slide");
+        let currentSlide = 0;
+
+        setInterval(() => {
+            slides[currentSlide].classList.remove("active");
+            currentSlide = (currentSlide + 1) % slides.length;
+            slides[currentSlide].classList.add("active");
+        }, 3500);
+
+        // Scroll reveal animation
+        const revealItems = document.querySelectorAll(".reveal");
+
+        function revealOnScroll() {
+            revealItems.forEach((item) => {
+                const itemTop = item.getBoundingClientRect().top;
+                if (itemTop < window.innerHeight - 100) {
+                    item.classList.add("active");
+                }
+            });
+        }
+
+        window.addEventListener("scroll", revealOnScroll);
+        revealOnScroll();
+
+        // Parallax effect
+        window.addEventListener("scroll", () => {
+            const scroll = window.scrollY;
+            const feature = document.querySelector(".feature-bg");
+
+            if (feature) {
+                feature.style.backgroundPositionY = `${scroll * 0.18}px`;
             }
         });
+
+        // Particle animation function
+        function createParticles(canvasId, color) {
+            const canvas = document.getElementById(canvasId);
+            const ctx = canvas.getContext("2d");
+            let particles = [];
+
+            function resize() {
+                canvas.width = canvas.offsetWidth;
+                canvas.height = canvas.offsetHeight;
+            }
+
+            window.addEventListener("resize", resize);
+            resize();
+
+            class Particle {
+                constructor() {
+                    this.x = Math.random() * canvas.width;
+                    this.y = Math.random() * canvas.height;
+                    this.size = Math.random() * 3 + 1;
+                    this.speedX = Math.random() * 0.7 - 0.35;
+                    this.speedY = Math.random() * 0.7 - 0.35;
+                }
+
+                update() {
+                    this.x += this.speedX;
+                    this.y += this.speedY;
+
+                    if (this.x < 0 || this.x > canvas.width) this.speedX *= -1;
+                    if (this.y < 0 || this.y > canvas.height) this.speedY *= -1;
+                }
+
+                draw() {
+                    ctx.fillStyle = color;
+                    ctx.beginPath();
+                    ctx.arc(this.x, this.y, this.size, 0, Math.PI * 2);
+                    ctx.fill();
+                }
+            }
+
+            function init() {
+                particles = [];
+                for (let i = 0; i < 70; i++) {
+                    particles.push(new Particle());
+                }
+            }
+
+            function animate() {
+                ctx.clearRect(0, 0, canvas.width, canvas.height);
+                particles.forEach((particle) => {
+                    particle.update();
+                    particle.draw();
+                });
+                requestAnimationFrame(animate);
+            }
+
+            init();
+            animate();
+        }
+
+        createParticles("aboutParticles", "rgba(120, 0, 180, 0.45)");
+        createParticles("newsParticles", "rgba(255, 255, 255, 0.35)");
     </script>
+
 </body>
 
 </html>
